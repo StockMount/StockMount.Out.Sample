@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Nedir ?</value>
+  </data>
+  <data name="N11ApprovedOrder" xml:space="preserve">
+    <value>Onaylandı</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Doğrulama</value>
+  </data>
+  <data name="BiggestIntegrationMessageId" xml:space="preserve">
+    <value>En Büyük Mesaj Kodu</value>
+  </data>
+  <data name="BiggestOrderDetailId" xml:space="preserve">
+    <value>En Büyük Sipariş Kalem Kodu</value>
+  </data>
+  <data name="CampaignNumber" xml:space="preserve">
+    <value>Kampanya Kodu</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Kod</value>
+  </data>
+  <data name="GgCompleted" xml:space="preserve">
+    <value>Tamamlananlar</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Onay</value>
+  </data>
+  <data name="ConfirmOrRejectOrderItemService" xml:space="preserve">
+    <value>ConfirmOrRejectOrderItem</value>
+  </data>
+  <data name="ConfirmOrRejectOrderItemServiceDescription" xml:space="preserve">
+    <value>Bu servis ilgili sipariş kalemini onaylar veya reddeder.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="N11Delivered" xml:space="preserve">
+    <value>Teslim Edildi</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="Documentation" xml:space="preserve">
+    <value>Belgeler</value>
+  </data>
+  <data name="DoLoginService" xml:space="preserve">
+    <value>DoLogin</value>
+  </data>
+  <data name="DoLoginServiceDescription" xml:space="preserve">
+    <value>Bu metodu API servisine bağlanmak için kullanabilisiniz.&lt;br/&gt;
+Gelen ApiCode değerini diğer metotları çağırmak için kullanabilirsiniz.&lt;br/&gt;
+Oturum süresi dolduğunda bu metot ile yeniden bir ApiCode değeri alabilirsiniz.&lt;br/&gt;
+Oturum süresi dolduğunda (00006) hata kodunu alırsınız.</value>
+  </data>
+  <data name="Error00001" xml:space="preserve">
+    <value>Kimliğiniz doğrulanamadı !</value>
+  </data>
+  <data name="Error00002" xml:space="preserve">
+    <value>Hesap pasiftir !</value>
+  </data>
+  <data name="Error00003" xml:space="preserve">
+    <value>Eksik parametre !</value>
+  </data>
+  <data name="Error00004" xml:space="preserve">
+    <value>Zorunlu alan !</value>
+  </data>
+  <data name="Error00005" xml:space="preserve">
+    <value>Kötü istek !</value>
+  </data>
+  <data name="Error00006" xml:space="preserve">
+    <value>Oturum süresi doldu !</value>
+  </data>
+  <data name="Error10001" xml:space="preserve">
+    <value>Geçersiz dükkan !</value>
+  </data>
+  <data name="Error99999" xml:space="preserve">
+    <value>İşlem sırasında beklenmedik bir hata oluştu !</value>
+  </data>
+  <data name="ErrorList" xml:space="preserve">
+    <value>Hata Listesi</value>
+  </data>
+  <data name="Execute" xml:space="preserve">
+    <value>Çalıştır</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Kimden</value>
+  </data>
+  <data name="GetAllUserMessageService" xml:space="preserve">
+    <value>GetAllUserMessage</value>
+  </data>
+  <data name="GetAllUserMessageServiceDescription" xml:space="preserve">
+    <value>Bu servis istenen kullanıcının tüm mesaj özgeçmişini verir.</value>
+  </data>
+  <data name="GetIntegrationShipmentCompaniesService" xml:space="preserve">
+    <value>GetIntegrationShipmentCompanies</value>
+  </data>
+  <data name="GetIntegrationShipmentCompaniesServiceDescription" xml:space="preserve">
+    <value>Bu servis ilgili sanal pazar yerinin kargo şirket bilgilerini verir.</value>
+  </data>
+  <data name="GetMessagesService" xml:space="preserve">
+    <value>GetMessages</value>
+  </data>
+  <data name="GetMessagesServiceDescription" xml:space="preserve">
+    <value>Bu servis istenen dükkân ve mesaj tipi için mesajları verir.</value>
+  </data>
+  <data name="GetSalesService" xml:space="preserve">
+    <value>GetSales</value>
+  </data>
+  <data name="GetSalesServiceDescription" xml:space="preserve">
+    <value>Bu servis istenen dükkân ve sipariş durumu için satışları verir.</value>
+  </data>
+  <data name="GetStoresService" xml:space="preserve">
+    <value>GetStores</value>
+  </data>
+  <data name="GetStoresServiceDescription" xml:space="preserve">
+    <value>Bu servis kullanıcının var olan dükkân bilgilerini verir.</value>
+  </data>
+  <data name="Guide" xml:space="preserve">
+    <value>Uygulama Kılavuzu</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Gelen</value>
+  </data>
+  <data name="IntegrationId" xml:space="preserve">
+    <value>Entegrasyon Kodu</value>
+  </data>
+  <data name="IntegrationOrderCode" xml:space="preserve">
+    <value>Entegrasyon Sipariş Kodu</value>
+  </data>
+  <data name="IntegrationOrderDetailId" xml:space="preserve">
+    <value>Entegrasyon Sipariş Kalem Kodu</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Mesaj Metni</value>
+  </data>
+  <data name="MessageType" xml:space="preserve">
+    <value>Mesaj Tipi</value>
+  </data>
+  <data name="GgMoneyTransfer" xml:space="preserve">
+    <value>Para Transferleri</value>
+  </data>
+  <data name="N11NewOrder" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
+  <data name="OrderDetailId" xml:space="preserve">
+    <value>Sipariş Kalem Kodu</value>
+  </data>
+  <data name="OrderId" xml:space="preserve">
+    <value>Sipariş Kodu</value>
+  </data>
+  <data name="OrderStatus" xml:space="preserve">
+    <value>Sipariş Durumu</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Parola</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="N11Rejected" xml:space="preserve">
+    <value>Reddedildi</value>
+  </data>
+  <data name="RequestType" xml:space="preserve">
+    <value>İstek Tipi</value>
+  </data>
+  <data name="RequestUrl" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Zorunlu</value>
+  </data>
+  <data name="GgReturnedOrder" xml:space="preserve">
+    <value>İade Konumunda Olanlar</value>
+  </data>
+  <data name="SelectIntegration" xml:space="preserve">
+    <value>Bir entegrasyon seçin</value>
+  </data>
+  <data name="SendPhoneMessage" xml:space="preserve">
+    <value>Send phone message</value>
+  </data>
+  <data name="SendShipmentInformation" xml:space="preserve">
+    <value>Kargo bilgilerini gönder</value>
+  </data>
+  <data name="SendUserMessageService" xml:space="preserve">
+    <value>SendUserMessage</value>
+  </data>
+  <data name="SendUserMessageServiceDescription" xml:space="preserve">
+    <value>Bu servis ile istenen kişiye mesaj gönderilir.</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Giden</value>
+  </data>
+  <data name="ServicesList" xml:space="preserve">
+    <value>Hizmetler</value>
+  </data>
+  <data name="SetMessageRead" xml:space="preserve">
+    <value>Okundu olarak işaretle</value>
+  </data>
+  <data name="SetMessageReadService" xml:space="preserve">
+    <value>SetMessageRead</value>
+  </data>
+  <data name="SetOrderShipmentInformationService" xml:space="preserve">
+    <value>SetOrderShipmentInformation</value>
+  </data>
+  <data name="SetOrderShipmentInformationServiceDescription" xml:space="preserve">
+    <value>Bu servis ilgili sipariş kaleminin kargo bilgilerini atar.</value>
+  </data>
+  <data name="ShipmentBranch" xml:space="preserve">
+    <value>Kargo Şubesi</value>
+  </data>
+  <data name="ShipmentCompany" xml:space="preserve">
+    <value>Kargo Firması</value>
+  </data>
+  <data name="ShipmentCompanyId" xml:space="preserve">
+    <value>Kargo Firma Kodu</value>
+  </data>
+  <data name="ShipmentCompanyName" xml:space="preserve">
+    <value>Kargo Firma Adı</value>
+  </data>
+  <data name="ShipmentMethod" xml:space="preserve">
+    <value>Shipment Method</value>
+  </data>
+  <data name="ShipmentTrackingCode" xml:space="preserve">
+    <value>Kargo Takip Numarası</value>
+  </data>
+  <data name="N11Shipped" xml:space="preserve">
+    <value>Kargolandı</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>StockMount Out Örnek Projesi</value>
+  </data>
+  <data name="SmallestIntegrationMessageId" xml:space="preserve">
+    <value>En Küçük Mesaj Kodu</value>
+  </data>
+  <data name="SmallestOrderDetailId" xml:space="preserve">
+    <value>En Küçük Sipariş Kalem Kodu</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Durumu</value>
+  </data>
+  <data name="StoreId" xml:space="preserve">
+    <value>Dükkân Kodu</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Konu</value>
+  </data>
+  <data name="TestService" xml:space="preserve">
+    <value>Dene</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Kime</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Kullanıcı</value>
+  </data>
+  <data name="UserMessage" xml:space="preserve">
+    <value>User message</value>
+  </data>
+  <data name="UserMessageCode" xml:space="preserve">
+    <value>Entegrasyon Kullanıcı Mesaj Kodu</value>
+  </data>
+  <data name="UserMessageId" xml:space="preserve">
+    <value>Kullanıcı Mesaj Kodu</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="GgWaitingCargo" xml:space="preserve">
+    <value>Kargo Yapılacaklar</value>
+  </data>
+  <data name="GgWaitingConfirmation" xml:space="preserve">
+    <value>Onay Bekleyenler</value>
+  </data>
+  <data name="GgWaitingPayment" xml:space="preserve">
+    <value>Ödeme Beklediklerim</value>
+  </data>
+  <data name="HomePageDescription" xml:space="preserve">
+    <value>Bu StockMount Örnek Projesi ile StockMount Hizmetlerine nasıl bağlanabileceğinizi ve metotları nasıl kullanabileceğinizi öğrenebilirsiniz.&lt;br/&gt;
+Burada her hizmet için bir açıklama bulabilirsiniz.&lt;br/&gt;
+StockMount dünyasına hoş geldiniz !..&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href="https://github.com/StockMount" target="_blank" &gt;Projeyi GitHub'dan indiriz.&lt;/a&gt;
+&lt;br/&gt;
+&lt;a href="http://www.stockmount.com/tr-tr" target="_blank" &gt;StockMount Web Sitesini ziyaret ediniz.&lt;/a&gt;</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>Entegrasyon</value>
+  </data>
+  <data name="N11Completed" xml:space="preserve">
+    <value>Tamamlananlar</value>
+  </data>
+  <data name="SmApprovedOrder" xml:space="preserve">
+    <value>Onaylandı</value>
+  </data>
+  <data name="SmCompleted" xml:space="preserve">
+    <value>Tamamlananlar</value>
+  </data>
+  <data name="SmDelivered" xml:space="preserve">
+    <value>Teslim Edildi</value>
+  </data>
+  <data name="SmNewOrder" xml:space="preserve">
+    <value>Yeni</value>
+  </data>
+  <data name="SmRejected" xml:space="preserve">
+    <value>Reddedildi</value>
+  </data>
+  <data name="SmShipped" xml:space="preserve">
+    <value>Kargolandı</value>
+  </data>
+  <data name="SpCustomerCancelled" xml:space="preserve">
+    <value>Alıcı İptal Etti</value>
+  </data>
+  <data name="SpCustomerConfirmed" xml:space="preserve">
+    <value>Alıcı Onayladı</value>
+  </data>
+  <data name="SpCustomerReturned" xml:space="preserve">
+    <value>Alıcı İade Etti</value>
+  </data>
+  <data name="SpMoneyRefund" xml:space="preserve">
+    <value>Para İadesi</value>
+  </data>
+  <data name="SpMoneyTransfer" xml:space="preserve">
+    <value>Para Transferleri</value>
+  </data>
+  <data name="SpOrderSuspensed" xml:space="preserve">
+    <value>Sipariş Askıda</value>
+  </data>
+  <data name="SpPaymentConfirmation" xml:space="preserve">
+    <value>Ödeme Onayı</value>
+  </data>
+  <data name="SpSanalPazarCancelled" xml:space="preserve">
+    <value>SanalPazar İptal Etti</value>
+  </data>
+  <data name="SpSellerCancelled" xml:space="preserve">
+    <value>Satıcı İptal Etti</value>
+  </data>
+  <data name="SpShipmentNotReceived" xml:space="preserve">
+    <value>Kargo Ulaşmadı</value>
+  </data>
+  <data name="SpShipmentOnWay" xml:space="preserve">
+    <value>Kargo Teslimatta</value>
+  </data>
+  <data name="SpWaitingShipment" xml:space="preserve">
+    <value>Kargo Gönderimi</value>
+  </data>
+  <data name="Career" xml:space="preserve">
+    <value>Kariyer</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>e-Posta</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Faks</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>StockMount Profesyonel Entegrasyon Yöneticisi</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="SetMessageReadServiceDescription" xml:space="preserve">
+    <value>Bu servis ilgili mesajı okundu olarak işaretler.</value>
+  </data>
+  <data name="Licenses" xml:space="preserve">
+    <value>Lisans</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Bağlantılar</value>
+  </data>
+  <data name="StockMountGitHub" xml:space="preserve">
+    <value>GitHub StockMount</value>
+  </data>
+  <data name="StockMountSite" xml:space="preserve">
+    <value>StockMount Web Sitesi</value>
+  </data>
+  <data name="BiggestIntegrationMessageIdDescription" xml:space="preserve">
+    <value>Bu mesaj kodundan daha küçük mesajları getirir.</value>
+  </data>
+  <data name="BiggestOrderDetailIdDescription" xml:space="preserve">
+    <value>Bu sipariş kalem kodundan daha küçük siparişleri getirir.</value>
+  </data>
+  <data name="Error60001" xml:space="preserve">
+    <value>Entegrasyon hatası !</value>
+  </data>
+  <data name="Error60002" xml:space="preserve">
+    <value>Daha önceden kargo bilgisi girişmiştir !</value>
+  </data>
+  <data name="SmallestIntegrationMessageIdDescription" xml:space="preserve">
+    <value>Bu mesaj kodundan daha büyük mesajları getirir.</value>
+  </data>
+  <data name="SmallestOrderDetailIdDescription" xml:space="preserve">
+    <value>Bu sipariş kalem kodundan daha büyük siparişleri getirir.</value>
+  </data>
+</root>

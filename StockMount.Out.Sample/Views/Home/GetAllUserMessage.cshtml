@@ -1,0 +1,112 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = @Message.GetMessage(MessageCode.GetAllUserMessageService, Culture);
+}
+<div class="caption-full">
+    <h2>@Message.GetMessage(MessageCode.GetAllUserMessageService, Culture)</h2>
+
+    <div class="clearfix">
+        <hr />
+    </div>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.GetAllUserMessageServiceDescription, Culture))
+        
+        
+        <h3>@Message.GetMessage(MessageCode.MessageType, Culture)</h3>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        @Message.GetMessage(MessageCode.Code, Culture)
+                    </th>
+                    <th>
+                        @Message.GetMessage(MessageCode.Description, Culture)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        @Message.GetMessage(MessageCode.Inbox, Culture)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        2
+                    </td>
+                    <td>
+                        @Message.GetMessage(MessageCode.Sent, Culture)
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        
+
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestType, Culture):</strong>
+        <br />  Post
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestUrl, Culture): </strong>
+        <br /> https://out.stockmount.com/api/Integration/GetAllUserMessage
+    </p>
+
+    <a class="btn btn-success" id="btn-test">@Message.GetMessage(MessageCode.TestService, Culture) </a>
+
+    <div class="well display-none margin-top-10" id="test-area">
+
+        <div class="form-group">
+            <label for="store">@Message.GetMessage(MessageCode.StoreId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="store" placeholder="@Message.GetMessage(MessageCode.StoreId, Culture)" value="1">
+        </div>
+
+        <div class="form-group">
+            <label for="messageType">@Message.GetMessage(MessageCode.MessageType, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <select class="form-control" id="messageType">
+                <option value="1" selected="selected">@Message.GetMessage(MessageCode.Inbox, Culture)</option>
+                <option value="2">@Message.GetMessage(MessageCode.Sent, Culture)</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="user">@Message.GetMessage(MessageCode.User, Culture)  <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span> </label>
+            <input type="text" class="form-control" id="user" placeholder="@Message.GetMessage(MessageCode.User, Culture)" value="">
+        </div>
+
+        <div class="form-group">
+            <label for="smallestIntegrationMessageId">@Message.GetMessage(MessageCode.SmallestIntegrationMessageId, Culture) <br /><small>@Message.GetMessage(MessageCode.SmallestIntegrationMessageIdDescription, Culture)</small> </label>
+            <input type="text" class="form-control" id="smallestIntegrationMessageId" placeholder="@Message.GetMessage(MessageCode.SmallestIntegrationMessageId, Culture)" value="">
+        </div>
+
+        <div class="form-group">
+            <label for="biggestIntegrationMessageId">@Message.GetMessage(MessageCode.BiggestIntegrationMessageId, Culture) <br /><small>@Message.GetMessage(MessageCode.BiggestIntegrationMessageIdDescription, Culture)</small> </label>
+            <input type="text" class="form-control" id="biggestIntegrationMessageId" placeholder="@Message.GetMessage(MessageCode.BiggestIntegrationMessageId, Culture)" value="">
+        </div>
+
+        <a class="btn btn-success" id="btn-execute">@Message.GetMessage(MessageCode.Execute, Culture) </a>
+        <div class="clearfix"></div>
+        <br />
+        <div class="bg-warning display-hide" id="response-area">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/js/GetAllUserMessage")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            GetAllUserMessage.init();
+        });
+
+    </script>
+}

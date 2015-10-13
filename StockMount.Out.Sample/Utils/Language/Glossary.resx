@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>What is it ?</value>
+  </data>
+  <data name="N11ApprovedOrder" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Authentication" xml:space="preserve">
+    <value>Authentication</value>
+  </data>
+  <data name="BiggestIntegrationMessageId" xml:space="preserve">
+    <value>Biggest Message Id</value>
+  </data>
+  <data name="BiggestOrderDetailId" xml:space="preserve">
+    <value>Biggest Order Detail Id</value>
+  </data>
+  <data name="CampaignNumber" xml:space="preserve">
+    <value>Campaign Number</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="GgCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="ConfirmOrRejectOrderItemService" xml:space="preserve">
+    <value>ConfirmOrRejectOrderItem</value>
+  </data>
+  <data name="ConfirmOrRejectOrderItemServiceDescription" xml:space="preserve">
+    <value>This method comfirms or rejects specific order item.</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="N11Delivered" xml:space="preserve">
+    <value>Delivered</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Documentation" xml:space="preserve">
+    <value>Documentations</value>
+  </data>
+  <data name="DoLoginService" xml:space="preserve">
+    <value>DoLogin</value>
+  </data>
+  <data name="DoLoginServiceDescription" xml:space="preserve">
+    <value>You can use this method to login API service.&lt;br/&gt;
+You can use received ApiCode value to call other methods.&lt;br/&gt;
+You can recall this methot to get new ApiCode value when the session timed out&lt;br/&gt;
+You get (00006) error code when the session timed out.</value>
+  </data>
+  <data name="Error00001" xml:space="preserve">
+    <value>Not authenticated !</value>
+  </data>
+  <data name="Error00002" xml:space="preserve">
+    <value>Account is passive !</value>
+  </data>
+  <data name="Error00003" xml:space="preserve">
+    <value>Missing parameter !</value>
+  </data>
+  <data name="Error00004" xml:space="preserve">
+    <value>Required field !</value>
+  </data>
+  <data name="Error00005" xml:space="preserve">
+    <value>Bad request !</value>
+  </data>
+  <data name="Error00006" xml:space="preserve">
+    <value>Session timed out !</value>
+  </data>
+  <data name="Error10001" xml:space="preserve">
+    <value>Invalid Store !</value>
+  </data>
+  <data name="Error99999" xml:space="preserve">
+    <value>Unexpected error !</value>
+  </data>
+  <data name="ErrorList" xml:space="preserve">
+    <value>Error List</value>
+  </data>
+  <data name="Execute" xml:space="preserve">
+    <value>Execute</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="GetAllUserMessageService" xml:space="preserve">
+    <value>GetAllUserMessage</value>
+  </data>
+  <data name="GetAllUserMessageServiceDescription" xml:space="preserve">
+    <value>This method gets all messages history of specific user.</value>
+  </data>
+  <data name="GetIntegrationShipmentCompaniesService" xml:space="preserve">
+    <value>GetIntegrationShipmentCompanies</value>
+  </data>
+  <data name="GetIntegrationShipmentCompaniesServiceDescription" xml:space="preserve">
+    <value>This method gets shipment companies for specific e-commerce place.</value>
+  </data>
+  <data name="GetMessagesService" xml:space="preserve">
+    <value>GetMessages</value>
+  </data>
+  <data name="GetMessagesServiceDescription" xml:space="preserve">
+    <value>This method gets messages based on store and message type.</value>
+  </data>
+  <data name="GetSalesService" xml:space="preserve">
+    <value>GetSales</value>
+  </data>
+  <data name="GetSalesServiceDescription" xml:space="preserve">
+    <value>This method gets sales based on store and order status.</value>
+  </data>
+  <data name="GetStoresService" xml:space="preserve">
+    <value>GetStores</value>
+  </data>
+  <data name="GetStoresServiceDescription" xml:space="preserve">
+    <value>This method gets current user store(s) information.</value>
+  </data>
+  <data name="Guide" xml:space="preserve">
+    <value>Application Guide</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Inbox</value>
+  </data>
+  <data name="IntegrationId" xml:space="preserve">
+    <value>Integration Id</value>
+  </data>
+  <data name="IntegrationOrderCode" xml:space="preserve">
+    <value>Integration Order Code</value>
+  </data>
+  <data name="IntegrationOrderDetailId" xml:space="preserve">
+    <value>Integration Order Detail Id</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message Body</value>
+  </data>
+  <data name="MessageType" xml:space="preserve">
+    <value>Message Type</value>
+  </data>
+  <data name="MoneyTransfer" xml:space="preserve">
+    <value>Money Transfer</value>
+  </data>
+  <data name="N11NewOrder" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="OrderDetailId" xml:space="preserve">
+    <value>Order Detail Id</value>
+  </data>
+  <data name="OrderId" xml:space="preserve">
+    <value>Order Id</value>
+  </data>
+  <data name="OrderStatus" xml:space="preserve">
+    <value>Order Status</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="N11Rejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="RequestType" xml:space="preserve">
+    <value>Request Type</value>
+  </data>
+  <data name="RequestUrl" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="GgReturnedOrder" xml:space="preserve">
+    <value>In Case of Return</value>
+  </data>
+  <data name="SelectIntegration" xml:space="preserve">
+    <value>Select an integration</value>
+  </data>
+  <data name="SendPhoneMessage" xml:space="preserve">
+    <value>Send phone message</value>
+  </data>
+  <data name="SendShipmentInformation" xml:space="preserve">
+    <value>Send shipment information</value>
+  </data>
+  <data name="SendUserMessageService" xml:space="preserve">
+    <value>SendUserMessage</value>
+  </data>
+  <data name="SendUserMessageServiceDescription" xml:space="preserve">
+    <value>This method allows you to send message to specific user.</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="ServicesList" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="SetMessageRead" xml:space="preserve">
+    <value>Set message read</value>
+  </data>
+  <data name="SetMessageReadService" xml:space="preserve">
+    <value>SetMessageRead</value>
+  </data>
+  <data name="SetOrderShipmentInformationService" xml:space="preserve">
+    <value>SetOrderShipmentInformation</value>
+  </data>
+  <data name="SetOrderShipmentInformationServiceDescription" xml:space="preserve">
+    <value>This method sets shipment information of specific order item.</value>
+  </data>
+  <data name="ShipmentBranch" xml:space="preserve">
+    <value>Shipment Branch</value>
+  </data>
+  <data name="ShipmentCompany" xml:space="preserve">
+    <value>Shipment Company</value>
+  </data>
+  <data name="ShipmentCompanyId" xml:space="preserve">
+    <value>Shipment Company Id</value>
+  </data>
+  <data name="ShipmentCompanyName" xml:space="preserve">
+    <value>Shipment Company Name</value>
+  </data>
+  <data name="ShipmentMethod" xml:space="preserve">
+    <value>Shipment Method</value>
+  </data>
+  <data name="ShipmentTrackingCode" xml:space="preserve">
+    <value>Shipment Tracking Code</value>
+  </data>
+  <data name="N11Shipped" xml:space="preserve">
+    <value>Shipped</value>
+  </data>
+  <data name="SiteTitle" xml:space="preserve">
+    <value>StockMount Out Sample Project</value>
+  </data>
+  <data name="SmallestIntegrationMessageId" xml:space="preserve">
+    <value>Smallest Message Id</value>
+  </data>
+  <data name="SmallestOrderDetailId" xml:space="preserve">
+    <value>Smallest Order Detail Id</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StoreId" xml:space="preserve">
+    <value>Store Id</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TestService" xml:space="preserve">
+    <value>Try out</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserMessage" xml:space="preserve">
+    <value>User message</value>
+  </data>
+  <data name="UserMessageCode" xml:space="preserve">
+    <value>Integration User Message Code</value>
+  </data>
+  <data name="UserMessageId" xml:space="preserve">
+    <value>User Message Id</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="GgWaitingCargo" xml:space="preserve">
+    <value>Waiting Cargo</value>
+  </data>
+  <data name="GgWaitingConfirmation" xml:space="preserve">
+    <value>Waiting Confirmation</value>
+  </data>
+  <data name="GgWaitingPayment" xml:space="preserve">
+    <value>Waiting Payment</value>
+  </data>
+  <data name="HomePageDescription" xml:space="preserve">
+    <value>Thanks to StockMount Sample Project, you can learn how to login and use StockMount Service Methods.&lt;br/&gt;
+You can find a description for each single method.&lt;br/&gt;
+Welcome to world of StockMount !..&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href="https://github.com/StockMount" target="_blank" &gt;Download this project from GitHub&lt;/a&gt;
+&lt;br/&gt;
+&lt;a href="http://www.stockmount.com/en-tr" target="_blank" &gt;Visit StockMount Website&lt;/a&gt;</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>Integration</value>
+  </data>
+  <data name="N11Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="SmApprovedOrder" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="SmCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="SmDelivered" xml:space="preserve">
+    <value>Delivered</value>
+  </data>
+  <data name="SmNewOrder" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="SmRejected" xml:space="preserve">
+    <value>Rejected</value>
+  </data>
+  <data name="SmShipped" xml:space="preserve">
+    <value>Shipped</value>
+  </data>
+  <data name="SpCustomerCancelled" xml:space="preserve">
+    <value>Customer Cancelled</value>
+  </data>
+  <data name="SpCustomerConfirmed" xml:space="preserve">
+    <value>Customer Confirmed</value>
+  </data>
+  <data name="SpCustomerReturned" xml:space="preserve">
+    <value>Customer Returned</value>
+  </data>
+  <data name="SpMoneyRefund" xml:space="preserve">
+    <value>Money Refund</value>
+  </data>
+  <data name="SpMoneyTransfer" xml:space="preserve">
+    <value>Money Transfer</value>
+  </data>
+  <data name="SpOrderSuspensed" xml:space="preserve">
+    <value>Order Suspensed</value>
+  </data>
+  <data name="SpPaymentConfirmation" xml:space="preserve">
+    <value>Payment Confirmation</value>
+  </data>
+  <data name="SpSanalPazarCancelled" xml:space="preserve">
+    <value>SanalPazar Cancelled</value>
+  </data>
+  <data name="SpSellerCancelled" xml:space="preserve">
+    <value>Seller Cancelled</value>
+  </data>
+  <data name="SpShipmentNotReceived" xml:space="preserve">
+    <value>Shipment Not Received</value>
+  </data>
+  <data name="SpShipmentOnWay" xml:space="preserve">
+    <value>Shipment On Way</value>
+  </data>
+  <data name="SpWaitingShipment" xml:space="preserve">
+    <value>Waiting Shipment</value>
+  </data>
+  <data name="Career" xml:space="preserve">
+    <value>Career</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>e-mail</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>StockMount Professional Integration Manager</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="SetMessageReadServiceDescription" xml:space="preserve">
+    <value>This method sets specific message read.</value>
+  </data>
+  <data name="Licenses" xml:space="preserve">
+    <value>Licenses</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="StockMountGitHub" xml:space="preserve">
+    <value>StockMount on GitHub</value>
+  </data>
+  <data name="StockMountSite" xml:space="preserve">
+    <value>StockMount Website</value>
+  </data>
+  <data name="BiggestIntegrationMessageIdDescription" xml:space="preserve">
+    <value>Get messages have id's less than this message id</value>
+  </data>
+  <data name="BiggestOrderDetailIdDescription" xml:space="preserve">
+    <value>Get orders have id's less than this order id</value>
+  </data>
+  <data name="Error60001" xml:space="preserve">
+    <value>Integration Error !</value>
+  </data>
+  <data name="Error60002" xml:space="preserve">
+    <value>Sale item was shipped before !</value>
+  </data>
+  <data name="SmallestIntegrationMessageIdDescription" xml:space="preserve">
+    <value>Get messages have id's bigger than this message id</value>
+  </data>
+  <data name="SmallestOrderDetailIdDescription" xml:space="preserve">
+    <value>Get orders have id's bigger than this order id</value>
+  </data>
+</root>

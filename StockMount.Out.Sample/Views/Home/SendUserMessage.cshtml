@@ -1,0 +1,107 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = @Message.GetMessage(MessageCode.SendUserMessageService, Culture);
+}
+<div class="caption-full">
+    <h2>@Message.GetMessage(MessageCode.SendUserMessageService, Culture)</h2>
+
+    <div class="clearfix">
+        <hr />
+    </div>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.SendUserMessageServiceDescription, Culture))
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestType, Culture):</strong>
+        <br />  Post
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestUrl, Culture): </strong>
+        <br /> https://out.stockmount.com/api/Integration/SendUserMessage
+    </p>
+
+    <a class="btn btn-success" id="btn-test">@Message.GetMessage(MessageCode.TestService, Culture) </a>
+
+    <div class="well display-none margin-top-10" id="test-area">
+
+        <div class="form-group">
+            <label for="store">@Message.GetMessage(MessageCode.StoreId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="store" placeholder="@Message.GetMessage(MessageCode.StoreId, Culture)" value="1">
+        </div>
+
+        <div class="form-group">
+            <label for="integration">@Message.GetMessage(MessageCode.IntegrationId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span> </label>
+            <select class="form-control" id="integration">
+                <option value="0" selected="selected">@Message.GetMessage(MessageCode.SelectIntegration, Culture) </option>
+                <option value="1">GiittiGidiyor</option>
+                <option value="2">N11</option>
+                <option value="3">NeTicaret</option>
+                <option value="4">ePTTAvm</option>
+                <option value="5">OpenCart</option>
+                <option value="6">SanalPazar</option>
+                <option value="9999">StockMount</option>
+            </select> 
+        </div>
+
+        <div class="form-group">
+            <label for="integration">@Message.GetMessage(MessageCode.UserMessageId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="messageId" placeholder="@Message.GetMessage(MessageCode.UserMessageId, Culture)" value="1">
+        </div> 
+
+        <div class="form-group">
+            <label for="messageCode">@Message.GetMessage(MessageCode.UserMessageCode, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="messageCode" placeholder="@Message.GetMessage(MessageCode.UserMessageCode, Culture)" value="1">
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="messageFrom">@Message.GetMessage(MessageCode.From, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="messageFrom" placeholder="@Message.GetMessage(MessageCode.From, Culture)" value="1">
+        </div>
+        
+        <div class="form-group">
+            <label for="messageTo">@Message.GetMessage(MessageCode.To, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span> </label>
+            <input type="text" class="form-control" id="messageTo" placeholder="@Message.GetMessage(MessageCode.To, Culture)" value="1">
+        </div>
+        
+        <div class="form-group">
+            <label for="messageSubject">@Message.GetMessage(MessageCode.Subject, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span> </label>
+            <input type="text" class="form-control" id="messageSubject" placeholder="@Message.GetMessage(MessageCode.Subject, Culture)" value="1">
+        </div>
+        
+        <div class="form-group">
+            <label for="messageBody">@Message.GetMessage(MessageCode.Message, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <textarea class="form-control" rows="3" id="messageBody"></textarea>
+        </div>
+
+        
+        <div class="form-group"> 
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="false" id="messageRead" >
+                    @Message.GetMessage(MessageCode.SetMessageRead, Culture)
+                </label> 
+            </div>
+        </div>
+
+        
+
+        <a class="btn btn-success" id="btn-execute">@Message.GetMessage(MessageCode.Execute, Culture) </a>
+        <div class="clearfix"></div>
+        <br />
+        <div class="bg-warning display-hide" id="response-area">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/js/SendUserMessage")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            SendUserMessage.init();
+        });
+
+    </script>
+}

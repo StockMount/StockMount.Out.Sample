@@ -1,0 +1,15 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = Message.GetMessage(MessageCode.Home,Culture);
+}
+ 
+<h3>@Message.GetMessage(MessageCode.Home,Culture)</h3>
+ 
+
+<p>
+    @Html.Raw(Message.GetMessage(MessageCode.HomePageDescription, Culture))
+</p>
+<br />
+<br/>
+
+<img src="/Images/smservice.png"/>

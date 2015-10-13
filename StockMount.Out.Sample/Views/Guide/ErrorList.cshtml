@@ -1,0 +1,120 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = ViewBag.Message;
+}
+
+ <h2>@Message.GetMessage(MessageCode.ErrorList, Culture)</h2>
+
+<div class="clearfix">
+    <hr />
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Message.GetMessage(MessageCode.Code, Culture)
+            </th>
+            <th>
+                @Message.GetMessage(MessageCode.Description, Culture)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                00001
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error00001, Culture)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                00002
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error00002, Culture)
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                00003
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error00003, Culture)
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                00004
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error00004, Culture)
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                00005
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error00005, Culture)
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                00006
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error00006, Culture)
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                10001
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error10001, Culture)
+            </td>
+        </tr>
+        
+        
+        
+        <tr>
+            <td>
+                60001
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error60001, Culture)
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                60002
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error60002, Culture)
+            </td>
+        </tr>
+        
+
+        <tr>
+            <td>
+                99999
+            </td>
+            <td>
+                @Message.GetMessage(MessageCode.Error99999, Culture)
+            </td>
+        </tr>
+        
+
+
+    </tbody>
+</table>

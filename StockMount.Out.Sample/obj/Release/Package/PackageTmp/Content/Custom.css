@@ -1,0 +1,199 @@
+﻿
+/*-----------------------------------*/
+.display-none,
+.display-hide {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+} 
+
+/*************************************/
+.float-left {
+    float: left
+}
+.float-right {
+    float: right
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.margin-top-0
+{
+    margin-top: 0!important;
+}
+
+.margin-top-10
+{
+    margin-top: 10px !important;
+}
+
+.margin-top-20
+{
+    margin-top: 20px !important;
+}
+
+
+.padding-3 {
+    padding: 3px !important;
+}
+
+.padding-5 {
+    padding: 5px !important;
+}
+
+.padding-10 {
+    padding: 10px !important;
+}
+.padding-15 {
+    padding: 15px !important;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0!important;
+}
+
+.padding-top-5 {
+	padding-top: 5px !important;
+}
+.padding-top-10 {
+	padding-top: 10px !important;
+}
+.padding-top-15 {
+	padding-top: 15px !important;
+}
+.padding-top-20 {
+	padding-top: 20px !important;
+}
+.padding-top-25 {
+	padding-top: 25px !important;
+}
+.padding-top-30 {
+	padding-top: 30px !important;
+}
+.padding-top-35 {
+	padding-top: 35px !important;
+}
+.padding-top-40 {
+	padding-top: 40px !important;
+}
+.padding-top-45 {
+	padding-top: 45px !important;
+}
+.padding-top-50 {
+	padding-top: 50px !important;
+}
+.padding-top-60 {
+	padding-top: 60px !important;
+}
+
+
+.btn-margin-left-0 {
+     margin-left: 0px !important;
+}
+.btn-margin-right-0 {
+    margin-right: 0px !important; 
+}
+.padding-left-10 {
+    margin-left: 10px !important;
+}
+
+
+.margin-left-10 {
+    margin-left: 10px !important;
+}
+
+
+.margin-left-20 {
+    margin-left: 20px !important;
+}
+
+.padding-right-5 {
+    padding-right: 5px !important;
+}
+
+.margin-right-20 {
+    margin-right: 20px !important;
+}
+
+.padding-right-10 {
+    padding-right: 10px !important;
+}
+.padding-right-20 {
+    padding-right: 20px !important;
+}
+
+
+.padding-right-15
+ {
+    padding-right: 15px!important;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0!important;
+}
+
+.language-icon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+
+
+.font-black {
+    color:  black; 
+}
+
+/**************MENUT ******************/
+
+
+      #menu .glyphicon { margin-right:10px; }
+      .panel-collapse>.list-group .list-group-item:first-child {border-top-right-radius: 0;border-top-left-radius: 0;}
+      .panel-collapse>.list-group .list-group-item {border-width: 1px 0;}
+      .panel-collapse>.list-group .list-group-item:hover{background-color: #f3f3f3}
+      .panel-collapse>.list-group .list-group-item-cont {  padding-bottom:0}
+      .panel-collapse>.list-group {margin-bottom: 0;}
+      .panel-collapse .list-group-item {border-radius:0;}
+      .panel-collapse .list-group-item.active {background: ghostwhite}
+
+      .panel-collapse .list-group .list-group {margin: 0;margin-top: 10px;}
+      .panel-collapse .list-group-item li.list-group-item {margin: 0 -15px;border-top: 1px solid #ddd !important;border-bottom: 0;padding-left: 30px;}
+      .panel-collapse .list-group-item li.list-group-item:last-child {padding-bottom: 10px;}
+
+      .panel-collapse div.list-group div.list-group{margin: 0;}
+      .panel-collapse div.list-group .list-group a.list-group-item {border-top: 1px solid #ddd !important;border-bottom: 0;padding-left: 30px;}
+      .panel-collapse .list-group-item li.list-group-item {border-top: 1px solid #DDD !important;}
+
+        .panel-default > .panel-heading {
+           background-color: #DE2C68;
+            color: white;
+      }
+
+        .text-menu-item {
+            color: #DE2C68;
+        }
+        .list-group .list-group-item a {
+        color: black;            
+        }
+
+        #btn-test {
+            background-color: #222222;
+            border-color: #000000 
+        }
+        #btn-test:hover {
+            background-color: #565353;
+            border-color: #000000 
+        }
+
+        #btn-execute {
+            background-color: #222222;
+            border-color: #000000 
+        }
+        #btn-execute:hover {
+            background-color: #565353;
+            border-color: #000000 
+        }
+

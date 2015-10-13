@@ -1,0 +1,319 @@
+﻿@using StockMount.Out.Sample.Models
+@using StockMount.Out.Sample.Utils.Language
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - @(Message.GetMessage(MessageCode.SiteTitle, Culture)) </title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/bootstrap")
+         
+    </head>
+    <body> 
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/Home"><img src="/Images/logo.png" style="margin-top: -10px" /></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/Home"><span class="glyphicon glyphicon-home"></span> @Message.GetMessage(MessageCode.Home, Culture)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.stockmount.com/@(Culture == Constant.Culture.Turkish ? "tr-tr/nedir.html" : "en-tr/what-is-it.html")"><span class="glyphicon glyphicon-question-sign"></span> @Message.GetMessage(MessageCode.About, Culture)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.stockmount.com/@(Culture == Constant.Culture.Turkish ? "tr-tr/iletisim.html" : "en-tr/contact.html")"><span class="glyphicon glyphicon-phone-alt"></span> @Message.GetMessage(MessageCode.Contact, Culture)</a>
+                        </li>
+                        <li>
+                            <a href="https://www.stockmount.com/@(Culture == Constant.Culture.Turkish ? "tr-tr/kariyer.html" : "en-tr/career.html")"><span class="glyphicon glyphicon-user"></span> @Message.GetMessage(MessageCode.Career, Culture)</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">@Message.GetMessage(MessageCode.Language, Culture) <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" class="culture" data-culter="@Constant.Culture.English">English</a></li>
+                                <li><a href="#" class="culture" data-culter="@Constant.Culture.Turkish">Türkçe</a></li> 
+                            </ul>
+                        </li> 
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+       
+       
+           
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        @{
+                            string link = "/" + ViewContext.RouteData.GetRequiredString("controller").ToLower() + "/" + ViewContext.RouteData.GetRequiredString("action").ToLower();
+
+                        }
+                        <div class="panel-group" id="menu">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#menu" href="#menuItem1">
+                                            <span class="glyphicon glyphicon-list-alt">
+                                            </span>@Message.GetMessage(MessageCode.ServicesList, Culture)
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="menuItem1" class="panel-collapse collapse @(ViewContext.RouteData.GetRequiredString("controller").ToLower() == "home" ? "in":"")">
+                                    <ul class="list-group">
+                                        <li class="list-group-item list-group-item-cont ">
+
+                                            <span class="glyphicon glyphicon-lock "></span>
+                                            <strong>
+                                                <a href="/Home/DoLogin" class="font-black">@Message.GetMessage(MessageCode.Authentication, Culture) </a>
+                                            </strong>
+                                            <ul class="list-group">
+
+                                                <li class="list-group-item @(link == "/home/dologin" ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-log-in text-menu-item"></span><a href="/Home/DoLogin">@Message.GetMessage(MessageCode.DoLoginService, Culture) </a>
+                                                </li>
+
+                                            </ul>
+
+                                        <li class="list-group-item list-group-item-cont">
+                                            <span class="glyphicon glyphicon-flash  "></span>
+                                            <strong>
+                                                <a href="/Home/GetStores" class="font-black"> @Message.GetMessage("Integration", Culture)   </a>
+                                            </strong>
+                                            <ul class="list-group">
+                                                <li class="list-group-item @(link == "/home/getstores" ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetStores">@Message.GetMessage(MessageCode.GetStoresService, Culture) </a>
+                                                </li>
+                                                <li class="list-group-item @(link == "/home/getsales" ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-shopping-cart text-menu-item"></span><a href="/Home/GetSales">@Message.GetMessage(MessageCode.GetSalesService, Culture) </a>
+                                                </li>
+                                                <li class="list-group-item @(link == "/home/getmessages" ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-envelope text-menu-item"></span><a href="/Home/GetMessages">@Message.GetMessage(MessageCode.GetMessagesService, Culture) </a>
+                                                </li>
+                                                <li class="list-group-item @(link == "/home/getallusermessage" ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-envelope text-menu-item"></span><a href="/Home/GetAllUserMessage">@Message.GetMessage(MessageCode.GetAllUserMessageService, Culture) </a>
+                                                </li>
+                                                <li class="list-group-item @(link == "/home/sendusermessage" ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-comment text-menu-item"></span><a href="/Home/SendUserMessage">@Message.GetMessage(MessageCode.SendUserMessageService, Culture) </a>
+                                                </li>
+                                                <li class="list-group-item @(link == ("/home/SetMessageRead" ).ToLower() ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-check text-menu-item"></span><a href="/Home/SetMessageRead">@Message.GetMessage(MessageCode.SetMessageReadService, Culture) </a>
+                                                </li>
+                                                <li class="list-group-item @(link == ("/home/ConfirmOrRejectOrderItem").ToLower() ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-share-alt text-menu-item"></span><a href="/Home/ConfirmOrRejectOrderItem">@Message.GetMessage(MessageCode.ConfirmOrRejectOrderItemService, Culture) </a>
+                                                </li>
+                                                <li class="list-group-item @(link == ("/home/GetIntegrationShipmentCompanies").ToLower() ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-sort text-menu-item"></span><a href="/Home/GetIntegrationShipmentCompanies">@Message.GetMessage(MessageCode.GetIntegrationShipmentCompaniesService, Culture) </a>
+                                                </li>
+                                                <li class="list-group-item @(link == ("/home/SetOrderShipmentInformation").ToLower() ? "active" : "")">
+                                                    <span class="glyphicon glyphicon-pencil text-menu-item"></span><a href="/Home/SetOrderShipmentInformation">@Message.GetMessage(MessageCode.SetOrderShipmentInformationService, Culture) </a>
+                                                </li>
+                                                
+                                            </ul>
+</ul>
+                                </div>
+                            </div>
+                             <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#menu" href="#menuItem2">
+                                            <span class="glyphicon glyphicon-file">
+                                            </span>@Message.GetMessage(MessageCode.Guide, Culture)
+                                        </a>
+                                    </h4>
+                                </div>
+                                 <div id="menuItem2" class="panel-collapse collapse @(ViewContext.RouteData.GetRequiredString("controller").ToLower() == "guide" ? "in" : "")">
+                                     <ul class="list-group">
+
+                                         @* <span class="glyphicon glyphicon-pencil text-primary"></span><a href="/Home/DoLogin">@Message.GetMessage(MessageCode.DoLoginService, Culture) </a>*@
+
+                                         <li class="list-group-item @(link == "/guide/errorlist" ? "active" : "")">
+                                             <span class="glyphicon glyphicon-exclamation-sign text-menu-item"></span><a href="/Guide/ErrorList">@Message.GetMessage(MessageCode.ErrorList, Culture) </a>
+                                         </li>
+                                         <li class="list-group-item @(link == "/guide/documentation" ? "active" : "")">
+                                             <span class="glyphicon glyphicon-text-background text-menu-item"></span><a href="/Guide/Documentation">@Message.GetMessage(MessageCode.Documentation, Culture) </a>
+                                         </li>
+
+                                         <li class="list-group-item @(link == "/guide/Licenses" ? "active" : "")">
+                                             <span class="glyphicon glyphicon-file text-menu-item"></span><a href="/Guide/Licenses">@Message.GetMessage(MessageCode.Licenses, Culture) </a>
+                                         </li>
+
+
+                                     </ul>
+                                 </div>
+                            </div> 
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#menu" href="#menuItem3">
+                                            <span class="glyphicon glyphicon-file">
+                                            </span>@Message.GetMessage(MessageCode.Links , Culture)
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="menuItem3" class="panel-collapse collapse ">
+                                    <ul class="list-group"> 
+                                        <li class="list-group-item  ">
+                                            <a href="http://www.stockmount.com/" target="_blank">@Message.GetMessage(MessageCode.StockMountSite , Culture)</a>
+                                        </li>
+                                        <li class="list-group-item  ">
+                                            <a href="https://github.com/StockMount" target="_blank">@Message.GetMessage(MessageCode.StockMountGitHub, Culture) </a>
+                                        </li>
+  
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        @*<div id="sidebar" class="well sidebar-nav">
+            <h5>
+                <i class="glyphicon glyphicon-list-alt"></i>
+                <strong><b>@Message.GetMessage(MessageCode.ServicesList, Culture)</b></strong>
+            </h5>
+            <ul class="nav nav-pills nav-stacked">
+                
+                <li class="@(link== "/home/dologin" ? "active":"") ">
+                    <a href="/Home/DoLogin" >@Message.GetMessage(MessageCode.DoLoginService, Culture) </a>
+                </li>
+                <li class="@(link == "/home/getstores" ? "active" : "") ">
+                    <a href="/Home/GetStores" >@Message.GetMessage(MessageCode.GetStoresService, Culture) </a>
+                </li>
+                <li class="@(link == "/home/getsales" ? "active" : "") ">
+                    <a href="/Home/GetSales" >@Message.GetMessage(MessageCode.GetSalesService, Culture) </a>
+                </li>
+                <li class="@(link == "/home/getmessages" ? "active" : "") ">
+                    <a href="/Home/GetMessages" >@Message.GetMessage(MessageCode.GetMessagesService, Culture) </a>
+                </li>
+                <li class="@(link == "/home/sendusermessage" ? "active" : "") ">
+                    <a href="/Home/SendUserMessage">@Message.GetMessage(MessageCode.SendUserMessageService, Culture) </a>
+                </li>
+            </ul>
+            @*<h5>
+                <i class="glyphicon glyphicon-user"></i>
+                <small><b>USERS</b></small>
+            </h5>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">List</a></li>
+                <li><a href="#">Manage</a></li>
+            </ul>
+    </div> *@
+
+                        @*<p class="lead">@Message.GetMessage(MessageCode.ServicesList, Culture)</p>
+                        <div class="list-group">
+                            @{
+                                string link = "/" + ViewContext.RouteData.GetRequiredString("controller").ToLower() + "/" + ViewContext.RouteData.GetRequiredString("action").ToLower();
+                                 
+                            }
+                        
+                            <a href="/Home/DoLogin" class="list-group-item @(link== "/home/dologin" ? "active":"") ">@Message.GetMessage(MessageCode.DoLoginService, Culture) </a>  
+                            <a href="/Home/GetStores" class="list-group-item @(link == "/home/getstores" ? "active" : "")">@Message.GetMessage(MessageCode.GetStoresService, Culture) </a>
+                            <a href="/Home/GetSales" class="list-group-item @(link == "/home/getsales" ? "active" : "")">@Message.GetMessage(MessageCode.GetSalesService, Culture) </a>
+                            <a href="/Home/GetMessages" class="list-group-item @(link == "/home/getmessages" ? "active" : "")">@Message.GetMessage(MessageCode.GetMessagesService, Culture) </a>
+                            <a href="/Home/SendUserMessage" class="list-group-item @(link == "/home/sendusermessage" ? "active" : "")">@Message.GetMessage(MessageCode.SendUserMessageService, Culture) </a> 
+                        </div>*@
+                    </div>
+                    <div class="col-md-8">
+                        @RenderBody()
+
+                    </div>
+                    </div>
+            </div>
+            <div class="container">
+
+                <hr>
+
+                <!-- Footer -->
+                <footer>
+                   
+                    <div class="row font-footer"  >
+                        <div class="phone col-lg-4">
+                            <p>  Copyright &copy; @(Message.GetMessage(MessageCode.SiteTitle, Culture))  @DateTime.Now.Year
+                                     
+                            </p>
+                        </div>
+                        
+                        <div class="col-lg-4 phone">
+                            
+                            <div class="footer-icon">
+                                <span class="glyphicon glyphicon-phone"></span>
+                            </div>
+                              <p>
+    <strong>@Message.GetMessage(MessageCode.Phone, Culture):</strong> +90 850 840 77 77<br />
+    <strong>@Message.GetMessage(MessageCode.Fax, Culture):</strong> +90 312 479 10 60<br />
+    <strong>@Message.GetMessage(MessageCode.Email, Culture):</strong> stockmount@stockmount.com<br />
+</p>
+ 
+                           
+                        </div>
+                        
+                        
+                        <div class="phone col-lg-4">
+                            <div class="footer-icon">
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                            </div>
+                            <p> 
+                                  Kabil Caddesi No: 75/7 06460 Öveçler, Ankara / Türkiye <br />
+                                  @Message.GetMessage(MessageCode.Owner, Culture) 
+                              
+                            </p>
+                        </div>
+                        
+
+                    </div>
+                </footer>
+
+            </div>
+       
+         
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/Bootstrap/js")
+        @Scripts.Render("~/js/JsonFormater")
+        @RenderSection("scripts", required: false)
+
+        <script src="~/Scripts/jquery.cookie.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+              $('.culture').on("click", function () {
+                    $.removeCookie("culture");
+                    $.cookie("culture", $(this).attr('data-culter'), { expires: 1000, path: "/" });
+
+                    if (getUrlEncodedKey('UserCulture', location.search) == '') {
+
+                        window.location = window.location  ;
+                    }
+                    else location.reload();
+
+                    //location.reload();
+                });
+            });
+            var getUrlEncodedKey = function (key, query) {
+                if (!query)
+                    query = window.location.search;
+                var re = new RegExp("[?|&]" + key + "=(.*?)&");
+                var matches = re.exec(query + "&");
+                if (!matches || matches.length < 2)
+                    return "";
+                return decodeURIComponent(matches[1].replace("+", " "));
+            };
+        </script>
+        
+
+        
+    </body>
+</html>

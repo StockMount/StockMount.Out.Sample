@@ -1,0 +1,148 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = @Message.GetMessage(MessageCode.SetOrderShipmentInformationService, Culture);
+}
+<div class="caption-full">
+    <h2>@Message.GetMessage(MessageCode.SetOrderShipmentInformationService, Culture)</h2>
+
+    <div class="clearfix">
+        <hr />
+    </div>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.SetOrderShipmentInformationServiceDescription, Culture))
+
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestType, Culture):</strong>
+        <br />  Post
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestUrl, Culture): </strong>
+        <br /> https://out.stockmount.com/api/Integration/SetOrderShipmentInformation
+    </p>
+
+    <a class="btn btn-success" id="btn-test">@Message.GetMessage(MessageCode.TestService, Culture) </a>
+
+    <div class="well display-none margin-top-10" id="test-area">
+        
+        <div class="form-group">
+            <label for="store">@Message.GetMessage(MessageCode.StoreId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="store" placeholder="@Message.GetMessage(MessageCode.StoreId, Culture)" value="1">
+        </div>
+        
+
+        <div class="form-group">
+            <label for="integration">@Message.GetMessage(MessageCode.IntegrationId, Culture)  <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <select class="form-control" id="integration">
+                <option value="0" selected="selected">@Message.GetMessage(MessageCode.SelectIntegration, Culture) </option>
+                <option value="1">GiittiGidiyor</option>
+                <option value="2">N11</option> 
+                <option value="5">OpenCart</option>
+                <option value="6">SanalPazar</option>
+                <option value="9999">StockMount</option>
+            </select>
+        </div>
+
+        @*<div class="form-group">
+            <label for="orderId">@Message.GetMessage(MessageCode.OrderId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="orderId" placeholder="@Message.GetMessage(MessageCode.OrderId, Culture)" value="1">
+        </div>*@
+
+        <div class="form-group">
+            <label for="integrationOrderCode">@Message.GetMessage(MessageCode.IntegrationOrderCode, Culture) </label>
+            <input type="text" class="form-control" id="integrationOrderCode" placeholder="@Message.GetMessage(MessageCode.IntegrationOrderCode, Culture)" value="1">
+        </div>
+        
+        @*<div class="form-group">
+            <label for="integrationOrderDetailId">@Message.GetMessage(MessageCode.IntegrationOrderDetailId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="integrationOrderDetailId" placeholder="@Message.GetMessage(MessageCode.IntegrationOrderDetailId, Culture)" value="1">
+        </div>*@
+        
+        <div class="form-group">
+            <label for="shipmentCompany">@Message.GetMessage(MessageCode.ShipmentCompany, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="shipmentCompany" placeholder="@Message.GetMessage(MessageCode.ShipmentCompany, Culture)" value="1">
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="shipmentTrackingCode">@Message.GetMessage(MessageCode.ShipmentTrackingCode, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="shipmentTrackingCode" placeholder="@Message.GetMessage(MessageCode.ShipmentTrackingCode, Culture)" value="1">
+        </div>
+        
+        <div class="form-group">
+            <label for="shipmentBranch">@Message.GetMessage(MessageCode.ShipmentBranch, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="shipmentBranch" placeholder="@Message.GetMessage(MessageCode.ShipmentBranch, Culture)" value="1">
+        </div>
+
+        @*<div class="form-group">
+            <label for="shipmentCompanyName">@Message.GetMessage(MessageCode.ShipmentCompanyName, Culture) </label>
+            <input type="text" class="form-control" id="shipmentCompanyName" placeholder="@Message.GetMessage(MessageCode.ShipmentCompanyName, Culture)" value="1">
+        </div>*@
+
+        <div class="form-group">
+            <label for="campaignNumber">@Message.GetMessage(MessageCode.CampaignNumber, Culture)  </label>
+            <input type="text" class="form-control" id="campaignNumber" placeholder="@Message.GetMessage(MessageCode.CampaignNumber, Culture)" value="1">
+        </div>
+
+        <div class="form-group">
+            <label for="shipmentCompanyId">@Message.GetMessage(MessageCode.ShipmentCompanyId, Culture)  </label>
+            <input type="text" class="form-control" id="shipmentCompanyId" placeholder="@Message.GetMessage(MessageCode.ShipmentCompanyId, Culture)" value="1">
+        </div>
+        
+        @*<div class="form-group">
+            <label for="shipmentMethod">@Message.GetMessage(MessageCode.ShipmentMethod, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="shipmentMethod" placeholder="@Message.GetMessage(MessageCode.ShipmentMethod, Culture)" value="1">
+        </div>*@
+        
+        <div class="form-group">
+            <label for="orderDetailId">@Message.GetMessage(MessageCode.OrderDetailId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="orderDetailId" placeholder="@Message.GetMessage(MessageCode.OrderDetailId, Culture)" value="1">
+        </div>
+        
+ 
+
+        @*<div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="false" id="sendPhoneMessage">
+                    @Message.GetMessage(MessageCode.SendPhoneMessage, Culture)
+                </label>
+            </div>  
+        </div>*@
+        
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="false" id="sendShipmentInformation">
+                    @Message.GetMessage(MessageCode.SendShipmentInformation, Culture)
+                </label>
+            </div>
+        </div>
+        
+
+        @*<div class="form-group">
+            <label for="userMessage">@Message.GetMessage(MessageCode.UserMessage, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="userMessage" placeholder="@Message.GetMessage(MessageCode.UserMessage, Culture)" value="1">
+        </div>*@
+        
+      
+
+        <a class="btn btn-success" id="btn-execute">@Message.GetMessage(MessageCode.Execute, Culture) </a>
+        <div class="clearfix"></div>
+        <br />
+        <div class="bg-warning display-hide" id="response-area">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/js/SetOrderShipmentInformation")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            SetOrderShipmentInformation.init();
+        });
+
+    </script>
+}
