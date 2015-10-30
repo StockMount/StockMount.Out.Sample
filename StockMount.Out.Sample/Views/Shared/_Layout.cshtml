@@ -170,7 +170,7 @@
                                 <div id="menuItem3" class="panel-collapse collapse ">
                                     <ul class="list-group"> 
                                         <li class="list-group-item  ">
-                                            <a href="http://www.stockmount.com/" target="_blank">@Message.GetMessage(MessageCode.StockMountSite , Culture)</a>
+                                            <a href="http://www.stockmount.com/@(Culture == Constant.Culture.Turkish ? "tr-tr" : "en-tr")" target="_blank">@Message.GetMessage(MessageCode.StockMountSite , Culture)</a>
                                         </li>
                                         <li class="list-group-item  ">
                                             <a href="https://github.com/StockMount" target="_blank">@Message.GetMessage(MessageCode.StockMountGitHub, Culture) </a>
