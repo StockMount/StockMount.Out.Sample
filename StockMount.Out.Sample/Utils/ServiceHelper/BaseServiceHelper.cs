@@ -15,7 +15,7 @@ namespace StockMount.Out.Sample.Utils.ServiceHelper
             HttpClient httpClient = new HttpClient { BaseAddress = new Uri(System.Configuration.ConfigurationManager.AppSettings["StockMountApiUrl"] ?? String.Empty) };
 
             #region Authentication
-            string authInfo = "a:1";
+            string authInfo = "demo:demo";
             authInfo = Convert.ToBase64String(Encoding.Default.GetBytes(authInfo));
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", authInfo);
             #endregion
