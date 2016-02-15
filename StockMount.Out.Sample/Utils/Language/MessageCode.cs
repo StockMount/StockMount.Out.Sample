@@ -191,7 +191,12 @@ namespace StockMount.Out.Sample.Utils.Language
 
         public const string SmallestOrderDetailIdDescription = "SmallestOrderDetailIdDescription";
         public const string BiggestOrderDetailIdDescription = "BiggestOrderDetailIdDescription";
-        
 
+
+
+        public static string RowsByPage = "RowsByPage"; 
+        public static string PageIndexDescription = "PageIndexDescription"; 
+        public static string PageIndex = "PageIndex"; 
+        public static string RowsByPageDescription = "RowsByPageDescription";
     }
 }

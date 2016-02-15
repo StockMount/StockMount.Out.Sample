@@ -709,6 +709,24 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Page Index.
+        /// </summary>
+        internal static string PageIndex {
+            get {
+                return ResourceManager.GetString("PageIndex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page index which to be retrieved.
+        /// </summary>
+        internal static string PageIndexDescription {
+            get {
+                return ResourceManager.GetString("PageIndexDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string Password {
@@ -759,6 +777,24 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string Required {
             get {
                 return ResourceManager.GetString("Required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rows by page.
+        /// </summary>
+        internal static string RowsByPage {
+            get {
+                return ResourceManager.GetString("RowsByPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to how many item will be  retrieved.
+        /// </summary>
+        internal static string RowsByPageDescription {
+            get {
+                return ResourceManager.GetString("RowsByPageDescription", resourceCulture);
             }
         }
         

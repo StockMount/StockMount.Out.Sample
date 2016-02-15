@@ -516,4 +516,16 @@ StockMount dünyasına hoş geldiniz !..&lt;br/&gt;
   <data name="SmallestOrderDetailIdDescription" xml:space="preserve">
     <value>Bu sipariş kalem kodundan daha büyük siparişleri getirir.</value>
   </data>
+  <data name="PageIndex" xml:space="preserve">
+    <value>Sayfa numarası</value>
+  </data>
+  <data name="PageIndexDescription" xml:space="preserve">
+    <value>Sayfa numarası</value>
+  </data>
+  <data name="RowsByPage" xml:space="preserve">
+    <value>Sayfada kayıt</value>
+  </data>
+  <data name="RowsByPageDescription" xml:space="preserve">
+    <value>Kaç kayıt listelenecek?</value>
+  </data>
 </root>

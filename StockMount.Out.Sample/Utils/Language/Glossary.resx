@@ -516,4 +516,16 @@ Welcome to world of StockMount !..&lt;br/&gt;
   <data name="SmallestOrderDetailIdDescription" xml:space="preserve">
     <value>Get orders have id's bigger than this order id</value>
   </data>
+  <data name="PageIndex" xml:space="preserve">
+    <value>Page Index</value>
+  </data>
+  <data name="PageIndexDescription" xml:space="preserve">
+    <value>Page index which to be retrieved</value>
+  </data>
+  <data name="RowsByPage" xml:space="preserve">
+    <value>Rows by page</value>
+  </data>
+  <data name="RowsByPageDescription" xml:space="preserve">
+    <value>how many item will be  retrieved</value>
+  </data>
 </root>

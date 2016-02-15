@@ -20,6 +20,14 @@
                 getSaleCriteria.BiggestOrderDetailId = $('#biggestOrderDetailId').val();
             }
 
+            if ($('#pageIndex').val() != '') {
+                getSaleCriteria.PageIndex = $('#pageIndex').val();
+            }
+
+            if ($('#rowsByPage').val() != '') {
+                getSaleCriteria.RowsByPage = $('#rowsByPage').val();
+            }
+
                 getSaleCriteria = JSON.stringify(getSaleCriteria, null, 2);
 
                 $.ajax({
