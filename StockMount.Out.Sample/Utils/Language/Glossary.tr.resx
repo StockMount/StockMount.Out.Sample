@@ -528,4 +528,133 @@ StockMount dünyasına hoş geldiniz !..&lt;br/&gt;
   <data name="RowsByPageDescription" xml:space="preserve">
     <value>Kaç kayıt listelenecek?</value>
   </data>
+  <data name="GetCurrenciesService" xml:space="preserve">
+    <value>GetCurrencies</value>
+  </data>
+  <data name="GetCurrenciesServiceDescription" xml:space="preserve">
+    <value>Sistemde var olan para birimleri verir</value>
+  </data>
+  <data name="DeleteProductService" xml:space="preserve">
+    <value>DeleteProduct</value>
+  </data>
+  <data name="DeleteProductServiceDescription" xml:space="preserve">
+    <value>Verilen ürün kodu için ürünü silinir</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Genel</value>
+  </data>
+  <data name="GetProductService" xml:space="preserve">
+    <value>GetProduct</value>
+  </data>
+  <data name="GetProductServiceDescription" xml:space="preserve">
+    <value>Verilen ürün kodu için ürün bilgilerine verir</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Ürün</value>
+  </data>
+  <data name="ProductId" xml:space="preserve">
+    <value>Ürün Kodu</value>
+  </data>
+  <data name="AddProductService" xml:space="preserve">
+    <value>AddProduct</value>
+  </data>
+  <data name="AddProductServiceDescription" xml:space="preserve">
+    <value>Bu servisi kullanarak yine ürün eklenir</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barkod</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>Marka</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="CurrencyId" xml:space="preserve">
+    <value>Para birimi kodu</value>
+  </data>
+  <data name="GetProductCategoriesService" xml:space="preserve">
+    <value>GetProductCategories</value>
+  </data>
+  <data name="GetProductCategoriesServiceDescription" xml:space="preserve">
+    <value>Bu servisi kullanarak ürün kategorileri getirlir</value>
+  </data>
+  <data name="GetProductSourcesService" xml:space="preserve">
+    <value>GetProductSources</value>
+  </data>
+  <data name="GetProductSourcesServiceDescription" xml:space="preserve">
+    <value>Bu servisi kullanarak ürün kaynakları getirlir</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Yükseklik</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Resimler</value>
+  </data>
+  <data name="ImageUrl" xml:space="preserve">
+    <value>Resim url</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Boy</value>
+  </data>
+  <data name="MarketPrice" xml:space="preserve">
+    <value>Piyasa fiyatı</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Fiyat</value>
+  </data>
+  <data name="ProductSourceId" xml:space="preserve">
+    <value>Ürün kaynağının kodu</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Miktar</value>
+  </data>
+  <data name="Specs" xml:space="preserve">
+    <value>Özellikler</value>
+  </data>
+  <data name="StopProductService" xml:space="preserve">
+    <value>StopProduct</value>
+  </data>
+  <data name="StopProductServiceDescription" xml:space="preserve">
+    <value>Bu servisi kullanarak verilen ürün kodu için ürün satışı durdurulur</value>
+  </data>
+  <data name="Subtitle" xml:space="preserve">
+    <value>Alt başlık</value>
+  </data>
+  <data name="TaxRate" xml:space="preserve">
+    <value>KDV</value>
+  </data>
+  <data name="UpdateProductService" xml:space="preserve">
+    <value>UpdateProduct</value>
+  </data>
+  <data name="UpdateProductServiceDescription" xml:space="preserve">
+    <value>Bu servisi kullanarak mevcüt ürün güncellenir</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Değer</value>
+  </data>
+  <data name="VariantName" xml:space="preserve">
+    <value>Varyant adı</value>
+  </data>
+  <data name="Variants" xml:space="preserve">
+    <value>Varyantlar</value>
+  </data>
+  <data name="VariantValue" xml:space="preserve">
+    <value>Varyant değeri</value>
+  </data>
+  <data name="Volume" xml:space="preserve">
+    <value>Desi</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>En</value>
+  </data>
 </root>

@@ -40,14 +40,24 @@ namespace StockMount.Out.Sample.Models.ServicesModels
         public bool Unread { get; set; }
         public int SmUserSchemaId { get; set; }
         public string SchemaName { get; set; }
+        public string Telephone { get; set; } 
         public string DeliveryTitle { get; set; }
         public string Address { get; set; }
-        public string Telephone { get; set; }
-
+        public string District { get; set; }
+        public string City { get; set; } 
         public string CargoCompany { get; set; }
         public string CargoLabelCode { get; set; }
         public string CargoPayment { get; set; }
-        public DateTime CargoDate { get; set; }
+        public DateTime CargoDate { get; set; } 
+        public string VariantProductCode { get; set; }
+        public string VariantName1 { get; set; }
+        public string VariantValue1 { get; set; }
+        public string VariantName2 { get; set; }
+        public string VariantValue2 { get; set; }
+        public string VariantName3 { get; set; }
+        public string VariantValue3 { get; set; } 
+        public string VariantProductBarcode { get; set; } 
+        public string VariantPhrase { get; set; }
     }
 
     public class StoreOrders  

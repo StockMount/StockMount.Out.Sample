@@ -111,7 +111,54 @@ namespace StockMount.Out.Sample.Controllers
 
         #endregion 
 
-        
+        #region General
+        public ActionResult GetCurrencies()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.GetCurrenciesService, GetRequestCulture());
+
+            return View();
+        }
+        #endregion
+
+        #region Product
+
+        public ActionResult GetProduct()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.GetProductService, GetRequestCulture());
+            return View();
+        }
+
+        public ActionResult DeleteProduct()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.DeleteProductService, GetRequestCulture());
+            return View();
+        }
+        public ActionResult AddProduct()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.AddProductService, GetRequestCulture());
+            return View();
+        }
+        public ActionResult UpdateProduct()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.UpdateProductService, GetRequestCulture());
+            return View();
+        }
+        public ActionResult StopProduct()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.UpdateProductService, GetRequestCulture());
+            return View();
+        }
+        public ActionResult GetProductSources()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.GetProductSourcesService, GetRequestCulture());
+            return View();
+        }
+        public ActionResult GetProductCategories()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.GetProductCategoriesService, GetRequestCulture());
+            return View();
+        }
+        #endregion
 
     }
 }

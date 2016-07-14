@@ -1,0 +1,50 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = @Message.GetMessage(MessageCode.StopProductService, Culture);
+}
+<div class="caption-full">
+    <h2>@Message.GetMessage(MessageCode.StopProductService, Culture)</h2>
+
+    <div class="clearfix">
+        <hr />
+    </div>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.StopProductServiceDescription, Culture))
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestType, Culture):</strong>
+        <br />  Post
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestUrl, Culture): </strong>
+        <br /> https://out.stockmount.com/api/Product/StopProduct
+    </p>
+
+    <a class="btn btn-success" id="btn-test">@Message.GetMessage(MessageCode.TestService, Culture) </a>
+
+    <div class="well display-none margin-top-10" id="test-area">
+
+        <div class="form-group ">
+            <label for="product">@Message.GetMessage(MessageCode.ProductId, Culture)   </label>
+            <input type="text" class="form-control" id="product" placeholder="@Message.GetMessage(MessageCode.ProductId, Culture)" value="0">
+        </div>
+     
+        <a class="btn btn-success" id="btn-execute">@Message.GetMessage(MessageCode.Execute, Culture) </a>
+        <div class="clearfix"></div>
+        <br />
+        <div class="bg-warning display-hide" id="response-area">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/js/StopProduct")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            StopProduct.init();
+        });
+
+    </script>
+}

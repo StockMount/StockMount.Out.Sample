@@ -1,0 +1,335 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = @Message.GetMessage(MessageCode.AddProductService, Culture);
+}
+<div class="caption-full">
+    <h2>@Message.GetMessage(MessageCode.AddProductService, Culture)</h2>
+
+    <div class="clearfix">
+        <hr />
+    </div>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.AddProductServiceDescription, Culture))
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestType, Culture):</strong>
+        <br />  Post
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestUrl, Culture): </strong>
+        <br /> https://out.stockmount.com/api/Product/AddProduct
+    </p>
+
+    <a class="btn btn-success" id="btn-test">@Message.GetMessage(MessageCode.TestService, Culture) </a>
+
+    <div class="well display-none margin-top-10" id="test-area">
+
+        <div class="form-group">
+            <label for="product-source-id">@Message.GetMessage(MessageCode.ProductSourceId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="number" class="form-control" id="product-source-id" placeholder="@Message.GetMessage(MessageCode.ProductSourceId, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="description">@Message.GetMessage(MessageCode.Description, Culture)</label>
+            <input type="text" class="form-control" id="description" placeholder="@Message.GetMessage(MessageCode.Description, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="code">@Message.GetMessage(MessageCode.Code, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="code" placeholder="@Message.GetMessage(MessageCode.Code, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="barcode">@Message.GetMessage(MessageCode.Barcode, Culture)</label>
+            <input type="text" class="form-control" id="barcode" placeholder="@Message.GetMessage(MessageCode.Barcode, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="name">@Message.GetMessage(MessageCode.Name, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="name" placeholder="@Message.GetMessage(MessageCode.Name, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="subtitle">@Message.GetMessage(MessageCode.Subtitle, Culture)</label>
+            <input type="text" class="form-control" id="subtitle" placeholder="@Message.GetMessage(MessageCode.Subtitle, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="price">@Message.GetMessage(MessageCode.Price, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="number" class="form-control" id="price" placeholder="@Message.GetMessage(MessageCode.Price, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="quantity">@Message.GetMessage(MessageCode.Quantity, Culture)</label>
+            <input type="number" class="form-control" id="quantity" placeholder="@Message.GetMessage(MessageCode.Quantity, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="brand">@Message.GetMessage(MessageCode.Brand, Culture)</label>
+            <input type="text" class="form-control" id="brand" placeholder="@Message.GetMessage(MessageCode.Brand, Culture)" value="">
+        </div>
+        <div class="form-group">
+            <label for="taxrate">@Message.GetMessage(MessageCode.TaxRate, Culture)</label>
+            <input type="number" class="form-control" id="taxrate" placeholder="@Message.GetMessage(MessageCode.TaxRate, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="model">@Message.GetMessage(MessageCode.Model, Culture)</label>
+            <input type="text" class="form-control" id="model" placeholder="@Message.GetMessage(MessageCode.Model, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="category">@Message.GetMessage(MessageCode.Category, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="text" class="form-control" id="category" placeholder="@Message.GetMessage(MessageCode.Category, Culture)" value="">
+        </div>
+        <div class="form-group">
+            <label for="currency">@Message.GetMessage(MessageCode.CurrencyId, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            <input type="number" class="form-control" id="currency" placeholder="@Message.GetMessage(MessageCode.CurrencyId, Culture)" value="">
+        </div>
+        <div class="form-group">
+            <label for="marketprice">@Message.GetMessage(MessageCode.MarketPrice, Culture)</label>
+            <input type="number" class="form-control" id="marketprice" placeholder="@Message.GetMessage(MessageCode.MarketPrice, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="volume">@Message.GetMessage(MessageCode.Volume, Culture)</label>
+            <input type="number" class="form-control" id="volume" placeholder="@Message.GetMessage(MessageCode.Volume, Culture)" value="">
+        </div>
+        <div class="form-group">
+            <label for="height">@Message.GetMessage(MessageCode.Height, Culture)</label>
+            <input type="number" class="form-control" id="height" placeholder="@Message.GetMessage(MessageCode.Height, Culture)" value="">
+        </div>
+        <div class="form-group">
+            <label for="length">@Message.GetMessage(MessageCode.Length, Culture)</label>
+            <input type="number" class="form-control" id="length" placeholder="@Message.GetMessage(MessageCode.Length, Culture)" value="">
+        </div>
+        <div class="form-group">
+            <label for="width">@Message.GetMessage(MessageCode.Width, Culture)</label>
+            <input type="number" class="form-control" id="width" placeholder="@Message.GetMessage(MessageCode.Width, Culture)" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="variantname1">@Message.GetMessage(MessageCode.VariantName, Culture)1</label>
+            <input type="text" class="form-control" id="variantname1" placeholder="@Message.GetMessage(MessageCode.VariantName, Culture)1" value="">
+        </div>
+        <div class="form-group">
+            <label for="variantname2">@Message.GetMessage(MessageCode.VariantName, Culture)2</label>
+            <input type="text" class="form-control" id="variantname2" placeholder="@Message.GetMessage(MessageCode.VariantName, Culture)2" value="">
+        </div>
+        <div class="form-group">
+            <label for="variantname3">@Message.GetMessage(MessageCode.VariantName, Culture)3</label>
+            <input type="text" class="form-control" id="variantname3" placeholder="@Message.GetMessage(MessageCode.VariantName, Culture)3" value="">
+        </div>
+        <div class="form-group">
+            <label for="variantname4">@Message.GetMessage(MessageCode.VariantName, Culture)4</label>
+            <input type="text" class="form-control" id="variantname4" placeholder="@Message.GetMessage(MessageCode.VariantName, Culture)4" value="">
+        </div>
+        
+        <div class="form-group">
+            <label>@Message.GetMessage(MessageCode.Images, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+            
+            <table class="table table-bordered table-striped" id="images">
+                <thead>
+                    <tr>
+                        <th>
+                            <label>@Message.GetMessage(MessageCode.Url, Culture)</label>
+                        </th>
+                        <th>
+                            <a class="btn btn-sm btn-success add-row"><i class="glyphicon glyphicon-plus"></i></a>
+                        </th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="display-none">
+                        <td>
+                            <input type="text" class="form-control input-url" placeholder="@Message.GetMessage(MessageCode.Url, Culture)" value="">
+
+                        </td>
+                        <td>
+                            <a class="btn btn-sm btn-danger remove-row"><i class="glyphicon glyphicon-minus"></i></a>
+                        </td>
+                    </tr>
+                    
+                    
+                    
+                    
+                </tbody>
+            </table>
+           
+            
+        </div>
+        
+        <div class="form-group">
+            <label>@Message.GetMessage(MessageCode.Variants, Culture)</label>
+            <div style="overflow-x: auto ">
+                <table class="table table-bordered table-striped" id="variants">
+                    <thead>
+                        <tr>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.Code, Culture)</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.Price, Culture)</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.Quantity, Culture)</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.Barcode, Culture)</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.CurrencyId, Culture)</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.ImageUrl, Culture)</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.VariantValue, Culture)1</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.VariantValue, Culture)2</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.VariantValue, Culture)3</label>
+                            </th>
+                            <th>
+                                <label>@Message.GetMessage(MessageCode.VariantValue, Culture)4</label>
+                            </th>
+
+                            <th>
+                                <a class="btn btn-sm btn-success add-row"><i class="glyphicon glyphicon-plus"></i></a>
+                            </th>
+
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="display-none">
+                            <td>
+                                <input type="text" class="form-control input-code" placeholder="@Message.GetMessage(MessageCode.Code, Culture)" value="">
+
+                            </td>
+                            <td>
+                                <input type="number" class="form-control input-price" placeholder="@Message.GetMessage(MessageCode.Price, Culture)" value="">
+
+                            </td>
+                            <td>
+                                <input type="number" class="form-control input-quantity" placeholder="@Message.GetMessage(MessageCode.Quantity, Culture)" value="">
+
+                            </td>
+                            <td>
+                                <input type="text" class="form-control input-barcode" placeholder="@Message.GetMessage(MessageCode.Barcode, Culture)" value="">
+
+                            </td>
+                            <td>
+                                <input type="number" class="form-control input-currencyid" placeholder="@Message.GetMessage(MessageCode.CurrencyId, Culture)" value="">
+
+                            </td>
+                            <td>
+                                <input type="text" class="form-control input-image-url" placeholder="@Message.GetMessage(MessageCode.ImageUrl, Culture)" value="">
+
+                            </td>
+                            <td>
+                                <input type="text" class="form-control input-variant-value1" placeholder="@Message.GetMessage(MessageCode.VariantValue, Culture)1" value="">
+
+                            </td>
+                            <td>
+                                <input type="text" class="form-control input-variant-value2" placeholder="@Message.GetMessage(MessageCode.VariantValue, Culture)2" value="">
+
+                            </td>
+                            <td>
+                                <input type="text" class="form-control input-variant-value3" placeholder="@Message.GetMessage(MessageCode.VariantValue, Culture)3" value="">
+
+                            </td>
+                            <td>
+                                <input type="text" class="form-control input-variant-value4" placeholder="@Message.GetMessage(MessageCode.VariantValue, Culture)4" value="">
+
+                            </td>
+                            <td>
+                                <a class="btn btn-sm btn-danger remove-row"><i class="glyphicon glyphicon-minus"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+       
+
+
+        </div>
+        
+        <div class="form-group">
+            <label>@Message.GetMessage(MessageCode.Specs, Culture)</label>
+
+            <table class="table table-bordered table-striped" id="specs">
+                <thead>
+                    <tr>
+                        <th>
+                            <label>@Message.GetMessage(MessageCode.Name, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+                        </th>
+                        <th>
+                            <label>@Message.GetMessage(MessageCode.Value, Culture) <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span></label>
+                        </th>
+
+
+                        <th>
+                            <a class="btn btn-sm btn-success add-row"><i class="glyphicon glyphicon-plus"></i></a>
+                        </th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="display-none">
+                        <td>
+                            <input type="text" class="form-control input-name" placeholder="@Message.GetMessage(MessageCode.Name, Culture)" value="">
+
+                        </td>
+                        <td>
+                            <input type="text" class="form-control input-value" placeholder="@Message.GetMessage(MessageCode.Value, Culture)" value="">
+
+                        </td>
+
+
+                        <td>
+                            <a class="btn btn-sm btn-danger remove-row"><i class="glyphicon glyphicon-minus"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+        @*
+        public List<productimage>
+            Images { get; set; }
+            
+            public List<productvariant>
+                Variants { get; set; }
+                public List<productspec>
+                    Specs { get; set; }*@
+
+
+
+
+                    <a class="btn btn-success" id="btn-execute">@Message.GetMessage(MessageCode.Execute, Culture) </a>
+                    <div class="clearfix"></div>
+                    <br />
+                    <div class="bg-warning display-hide" id="response-area">
+
+                    </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/js/AddProduct")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            AddProduct.init();
+        });
+
+    </script>
+}

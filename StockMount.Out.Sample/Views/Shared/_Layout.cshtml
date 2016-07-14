@@ -79,18 +79,34 @@
                                     <ul class="list-group">
                                         <li class="list-group-item list-group-item-cont ">
 
-                                            <span class="glyphicon glyphicon-lock "></span>
-                                            <strong>
-                                                <a href="/Home/DoLogin" class="font-black">@Message.GetMessage(MessageCode.Authentication, Culture) </a>
-                                            </strong>
-                                            <ul class="list-group">
+                                        <span class="glyphicon glyphicon-lock "></span>
+                                        <strong>
+                                            <a href="/Home/DoLogin" class="font-black">@Message.GetMessage(MessageCode.Authentication, Culture) </a>
+                                        </strong>
+                                        <ul class="list-group">
 
-                                                <li class="list-group-item @(link == "/home/dologin" ? "active" : "")">
-                                                    <span class="glyphicon glyphicon-log-in text-menu-item"></span><a href="/Home/DoLogin">@Message.GetMessage(MessageCode.DoLoginService, Culture) </a>
-                                                </li>
+                                            <li class="list-group-item @(link == "/home/dologin" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-log-in text-menu-item"></span><a href="/Home/DoLogin">@Message.GetMessage(MessageCode.DoLoginService, Culture) </a>
+                                            </li>
 
-                                            </ul>
+                                        </ul>
 
+
+
+                                         @*General functions section*@
+                                        <li class="list-group-item list-group-item-cont">
+                                            <span class="glyphicon glyphicon-unchecked  "></span>
+                                        <strong>
+                                            <a href="/Home/GetCurrencies" class="font-black"> @Message.GetMessage(MessageCode.General, Culture)   </a>
+                                        </strong>
+                                        <ul class="list-group">
+                                            <li class="list-group-item @(link == "/home/getcurrencies" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetCurrencies">@Message.GetMessage(MessageCode.GetCurrenciesService, Culture) </a>
+                                            </li>
+                                        </ul>
+
+
+                                        
                                         <li class="list-group-item list-group-item-cont">
                                             <span class="glyphicon glyphicon-flash  "></span>
                                             <strong>
@@ -124,8 +140,41 @@
                                                 <li class="list-group-item @(link == ("/home/SetOrderShipmentInformation").ToLower() ? "active" : "")">
                                                     <span class="glyphicon glyphicon-pencil text-menu-item"></span><a href="/Home/SetOrderShipmentInformation">@Message.GetMessage(MessageCode.SetOrderShipmentInformationService, Culture) </a>
                                                 </li>
-                                                
+
                                             </ul>
+
+                                            @*General functions section*@
+                                        <li class="list-group-item list-group-item-cont">
+                                            <span class="glyphicon glyphicon-tasks  "></span>
+                                            <strong>
+                                                <a href="/Home/GetProduct" class="font-black"> @Message.GetMessage(MessageCode.Product, Culture)   </a>
+                                            </strong>
+                                        <ul class="list-group">
+                                            <li class="list-group-item @(link == "/home/getproductsources" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetProductSources">@Message.GetMessage(MessageCode.GetProductSourcesService, Culture) </a>
+                                            </li>
+                                            <li class="list-group-item @(link == "/home/getproductcategories" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetProductCategories">@Message.GetMessage(MessageCode.GetProductCategoriesService, Culture) </a>
+                                            </li>
+                                            <li class="list-group-item @(link == "/home/getproduct" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetProduct">@Message.GetMessage(MessageCode.GetProductService, Culture) </a>
+                                            </li>
+                                           
+                                            <li class="list-group-item @(link == "/home/addproduct" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-plus-sign text-menu-item"></span><a href="/Home/AddProduct">@Message.GetMessage(MessageCode.AddProductService, Culture) </a>
+                                            </li>
+                                            <li class="list-group-item @(link == "/home/updateproduct" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-pencil text-menu-item"></span><a href="/Home/UpdateProduct">@Message.GetMessage(MessageCode.UpdateProductService, Culture) </a>
+                                            </li>
+                                            <li class="list-group-item @(link == "/home/stopproduct" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-pause text-menu-item"></span><a href="/Home/StopProduct">@Message.GetMessage(MessageCode.StopProductService, Culture) </a>
+                                            </li>
+                                            <li class="list-group-item @(link == "/home/deleteproduct" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-minus-sign text-menu-item"></span><a href="/Home/DeleteProduct">@Message.GetMessage(MessageCode.DeleteProductService, Culture) </a>
+                                            </li>
+                                           
+                                           
+                                        </ul>
 </ul>
                                 </div>
                             </div>
@@ -180,52 +229,8 @@
                                 </div>
                             </div> 
                         </div>
-                        @*<div id="sidebar" class="well sidebar-nav">
-            <h5>
-                <i class="glyphicon glyphicon-list-alt"></i>
-                <strong><b>@Message.GetMessage(MessageCode.ServicesList, Culture)</b></strong>
-            </h5>
-            <ul class="nav nav-pills nav-stacked">
-                
-                <li class="@(link== "/home/dologin" ? "active":"") ">
-                    <a href="/Home/DoLogin" >@Message.GetMessage(MessageCode.DoLoginService, Culture) </a>
-                </li>
-                <li class="@(link == "/home/getstores" ? "active" : "") ">
-                    <a href="/Home/GetStores" >@Message.GetMessage(MessageCode.GetStoresService, Culture) </a>
-                </li>
-                <li class="@(link == "/home/getsales" ? "active" : "") ">
-                    <a href="/Home/GetSales" >@Message.GetMessage(MessageCode.GetSalesService, Culture) </a>
-                </li>
-                <li class="@(link == "/home/getmessages" ? "active" : "") ">
-                    <a href="/Home/GetMessages" >@Message.GetMessage(MessageCode.GetMessagesService, Culture) </a>
-                </li>
-                <li class="@(link == "/home/sendusermessage" ? "active" : "") ">
-                    <a href="/Home/SendUserMessage">@Message.GetMessage(MessageCode.SendUserMessageService, Culture) </a>
-                </li>
-            </ul>
-            @*<h5>
-                <i class="glyphicon glyphicon-user"></i>
-                <small><b>USERS</b></small>
-            </h5>
-            <ul class="nav nav-pills nav-stacked">
-                <li><a href="#">List</a></li>
-                <li><a href="#">Manage</a></li>
-            </ul>
-    </div> *@
-
-                        @*<p class="lead">@Message.GetMessage(MessageCode.ServicesList, Culture)</p>
-                        <div class="list-group">
-                            @{
-                                string link = "/" + ViewContext.RouteData.GetRequiredString("controller").ToLower() + "/" + ViewContext.RouteData.GetRequiredString("action").ToLower();
-                                 
-                            }
-                        
-                            <a href="/Home/DoLogin" class="list-group-item @(link== "/home/dologin" ? "active":"") ">@Message.GetMessage(MessageCode.DoLoginService, Culture) </a>  
-                            <a href="/Home/GetStores" class="list-group-item @(link == "/home/getstores" ? "active" : "")">@Message.GetMessage(MessageCode.GetStoresService, Culture) </a>
-                            <a href="/Home/GetSales" class="list-group-item @(link == "/home/getsales" ? "active" : "")">@Message.GetMessage(MessageCode.GetSalesService, Culture) </a>
-                            <a href="/Home/GetMessages" class="list-group-item @(link == "/home/getmessages" ? "active" : "")">@Message.GetMessage(MessageCode.GetMessagesService, Culture) </a>
-                            <a href="/Home/SendUserMessage" class="list-group-item @(link == "/home/sendusermessage" ? "active" : "")">@Message.GetMessage(MessageCode.SendUserMessageService, Culture) </a> 
-                        </div>*@
+                       
+           
                     </div>
                     <div class="col-md-8">
                         @RenderBody()

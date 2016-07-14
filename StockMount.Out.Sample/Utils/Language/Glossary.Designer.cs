@@ -70,11 +70,38 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to AddProduct.
+        /// </summary>
+        internal static string AddProductService {
+            get {
+                return ResourceManager.GetString("AddProductService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This function adds a new product with the given parameters.
+        /// </summary>
+        internal static string AddProductServiceDescription {
+            get {
+                return ResourceManager.GetString("AddProductServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Authentication.
         /// </summary>
         internal static string Authentication {
             get {
                 return ResourceManager.GetString("Authentication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Barcode.
+        /// </summary>
+        internal static string Barcode {
+            get {
+                return ResourceManager.GetString("Barcode", resourceCulture);
             }
         }
         
@@ -115,6 +142,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Brand.
+        /// </summary>
+        internal static string Brand {
+            get {
+                return ResourceManager.GetString("Brand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Campaign Number.
         /// </summary>
         internal static string CampaignNumber {
@@ -129,6 +165,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string Career {
             get {
                 return ResourceManager.GetString("Career", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category.
+        /// </summary>
+        internal static string Category {
+            get {
+                return ResourceManager.GetString("Category", resourceCulture);
             }
         }
         
@@ -174,6 +219,33 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string Contact {
             get {
                 return ResourceManager.GetString("Contact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currency Id.
+        /// </summary>
+        internal static string CurrencyId {
+            get {
+                return ResourceManager.GetString("CurrencyId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DeleteProduct.
+        /// </summary>
+        internal static string DeleteProductService {
+            get {
+                return ResourceManager.GetString("DeleteProductService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This function deletes the product with the given Id.
+        /// </summary>
+        internal static string DeleteProductServiceDescription {
+            get {
+                return ResourceManager.GetString("DeleteProductServiceDescription", resourceCulture);
             }
         }
         
@@ -352,6 +424,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to General.
+        /// </summary>
+        internal static string General {
+            get {
+                return ResourceManager.GetString("General", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GetAllUserMessage.
         /// </summary>
         internal static string GetAllUserMessageService {
@@ -366,6 +447,24 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string GetAllUserMessageServiceDescription {
             get {
                 return ResourceManager.GetString("GetAllUserMessageServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetCurrencies.
+        /// </summary>
+        internal static string GetCurrenciesService {
+            get {
+                return ResourceManager.GetString("GetCurrenciesService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This service gets the available currencies in the system.
+        /// </summary>
+        internal static string GetCurrenciesServiceDescription {
+            get {
+                return ResourceManager.GetString("GetCurrenciesServiceDescription", resourceCulture);
             }
         }
         
@@ -402,6 +501,60 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string GetMessagesServiceDescription {
             get {
                 return ResourceManager.GetString("GetMessagesServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetProductCategories.
+        /// </summary>
+        internal static string GetProductCategoriesService {
+            get {
+                return ResourceManager.GetString("GetProductCategoriesService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This function gets the categories of a product source with a given id.
+        /// </summary>
+        internal static string GetProductCategoriesServiceDescription {
+            get {
+                return ResourceManager.GetString("GetProductCategoriesServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetProduct.
+        /// </summary>
+        internal static string GetProductService {
+            get {
+                return ResourceManager.GetString("GetProductService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This function returns a product given its Id.
+        /// </summary>
+        internal static string GetProductServiceDescription {
+            get {
+                return ResourceManager.GetString("GetProductServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetProductSources.
+        /// </summary>
+        internal static string GetProductSourcesService {
+            get {
+                return ResourceManager.GetString("GetProductSourcesService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This function gets the product sources.
+        /// </summary>
+        internal static string GetProductSourcesServiceDescription {
+            get {
+                return ResourceManager.GetString("GetProductSourcesServiceDescription", resourceCulture);
             }
         }
         
@@ -496,6 +649,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Height.
+        /// </summary>
+        internal static string Height {
+            get {
+                return ResourceManager.GetString("Height", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         internal static string Home {
@@ -516,6 +678,24 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string HomePageDescription {
             get {
                 return ResourceManager.GetString("HomePageDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Images.
+        /// </summary>
+        internal static string Images {
+            get {
+                return ResourceManager.GetString("Images", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Image url.
+        /// </summary>
+        internal static string ImageUrl {
+            get {
+                return ResourceManager.GetString("ImageUrl", resourceCulture);
             }
         }
         
@@ -574,6 +754,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Length.
+        /// </summary>
+        internal static string Length {
+            get {
+                return ResourceManager.GetString("Length", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Licenses.
         /// </summary>
         internal static string Licenses {
@@ -592,6 +781,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Market Price.
+        /// </summary>
+        internal static string MarketPrice {
+            get {
+                return ResourceManager.GetString("MarketPrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Message Body.
         /// </summary>
         internal static string Message {
@@ -606,6 +804,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string MessageType {
             get {
                 return ResourceManager.GetString("MessageType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Model.
+        /// </summary>
+        internal static string Model {
+            get {
+                return ResourceManager.GetString("Model", resourceCulture);
             }
         }
         
@@ -669,6 +876,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string N11Shipped {
             get {
                 return ResourceManager.GetString("N11Shipped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
             }
         }
         
@@ -741,6 +957,51 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string Phone {
             get {
                 return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Price.
+        /// </summary>
+        internal static string Price {
+            get {
+                return ResourceManager.GetString("Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product.
+        /// </summary>
+        internal static string Product {
+            get {
+                return ResourceManager.GetString("Product", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product Id.
+        /// </summary>
+        internal static string ProductId {
+            get {
+                return ResourceManager.GetString("ProductId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product Source Id.
+        /// </summary>
+        internal static string ProductSourceId {
+            get {
+                return ResourceManager.GetString("ProductSourceId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quantity.
+        /// </summary>
+        internal static string Quantity {
+            get {
+                return ResourceManager.GetString("Quantity", resourceCulture);
             }
         }
         
@@ -1087,6 +1348,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Specs.
+        /// </summary>
+        internal static string Specs {
+            get {
+                return ResourceManager.GetString("Specs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Money Refund.
         /// </summary>
         internal static string SpMoneyRefund {
@@ -1195,6 +1465,24 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to StopProduct.
+        /// </summary>
+        internal static string StopProductService {
+            get {
+                return ResourceManager.GetString("StopProductService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This function stops selling for a product with a given id.
+        /// </summary>
+        internal static string StopProductServiceDescription {
+            get {
+                return ResourceManager.GetString("StopProductServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Store Id.
         /// </summary>
         internal static string StoreId {
@@ -1213,6 +1501,24 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Subtitle.
+        /// </summary>
+        internal static string Subtitle {
+            get {
+                return ResourceManager.GetString("Subtitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tax Rate.
+        /// </summary>
+        internal static string TaxRate {
+            get {
+                return ResourceManager.GetString("TaxRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Try out.
         /// </summary>
         internal static string TestService {
@@ -1227,6 +1533,33 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string To {
             get {
                 return ResourceManager.GetString("To", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UpdateProduct.
+        /// </summary>
+        internal static string UpdateProductService {
+            get {
+                return ResourceManager.GetString("UpdateProductService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This function updates the product with the given id and parameters.
+        /// </summary>
+        internal static string UpdateProductServiceDescription {
+            get {
+                return ResourceManager.GetString("UpdateProductServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Url.
+        /// </summary>
+        internal static string Url {
+            get {
+                return ResourceManager.GetString("Url", resourceCulture);
             }
         }
         
@@ -1272,6 +1605,60 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string UserName {
             get {
                 return ResourceManager.GetString("UserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        internal static string Value {
+            get {
+                return ResourceManager.GetString("Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Variant Name.
+        /// </summary>
+        internal static string VariantName {
+            get {
+                return ResourceManager.GetString("VariantName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Variants.
+        /// </summary>
+        internal static string Variants {
+            get {
+                return ResourceManager.GetString("Variants", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Variant value.
+        /// </summary>
+        internal static string VariantValue {
+            get {
+                return ResourceManager.GetString("VariantValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volume.
+        /// </summary>
+        internal static string Volume {
+            get {
+                return ResourceManager.GetString("Volume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Width.
+        /// </summary>
+        internal static string Width {
+            get {
+                return ResourceManager.GetString("Width", resourceCulture);
             }
         }
     }

@@ -7,6 +7,8 @@ namespace StockMount.Out.Sample.Utils.Language
 {
     public static class MessageCode
     {
+
+        public const string General = "General";
         public const string SiteTitle = "SiteTitle";
         public const string Home = "Home";
         public const string About = "About";
@@ -30,7 +32,70 @@ namespace StockMount.Out.Sample.Utils.Language
         public const string GetIntegrationShipmentCompaniesService = "GetIntegrationShipmentCompaniesService";
         public const string SetOrderShipmentInformationService = "SetOrderShipmentInformationService";
         public const string SetMessageReadService = "SetMessageReadService";
+
+        //currency
+        public const string GetCurrenciesService = "GetCurrenciesService";
+
         
+        //product
+        public const string GetProductService = "GetProductService";
+        public const string DeleteProductService = "DeleteProductService";
+        public const string AddProductService = "AddProductService";
+        public const string UpdateProductService = "UpdateProductService";
+        public const string StopProductService = "StopProductService";
+        public const string GetProductCategoriesService = "GetProductCategoriesService";
+        public const string GetProductSourcesService = "GetProductSourcesService";
+     
+        public const string Product = "Product";
+
+        public const string ProductSourceId = "ProductSourceId";
+
+        public const string Barcode = "Barcode";
+
+        public const string Name = "Name";
+
+        public const string Subtitle = "Subtitle";
+
+        public const string Price = "Price";
+
+        public const string Quantity = "Quantity";
+
+        public const string Brand = "Brand";
+
+        public const string TaxRate = "TaxRate";
+
+        public const string Model = "Model";
+
+        public const string Category = "Category";
+
+        public const string CurrencyId = "CurrencyId";
+
+        public const string MarketPrice = "MarketPrice";
+
+        public const string Volume = "Volume";
+
+        public const string Height = "Height";
+
+        public const string Length = "Length";
+
+        public const string Width = "Width";
+
+        public const string VariantName = "VariantName";
+
+        public const string Url = "Url";
+
+        public const string Images = "Images";
+
+        public const string Variants = "Variants";
+
+        public const string ImageUrl = "ImageUrl";
+
+        public const string VariantValue = "VariantValue";
+
+        public const string Value = "Value";
+        public const string Specs = "Specs";
+       
+
         public const string DoLoginServiceDescription = "DoLoginServiceDescription";
         public const string GetStoresServiceDescription = "GetStoresServiceDescription";
         public const string GetSalesServiceDescription = "GetSalesServiceDescription";
@@ -42,8 +107,18 @@ namespace StockMount.Out.Sample.Utils.Language
         public const string SetOrderShipmentInformationServiceDescription = "SetOrderShipmentInformationServiceDescription";
         public const string SetMessageReadServiceDescription = "SetMessageReadServiceDescription";
         
+        //currency
+        public const string GetCurrenciesServiceDescription = "GetCurrenciesServiceDescription";
 
-
+        //product
+        public const string GetProductServiceDescription = "GetProductServiceDescription";
+        public const string DeleteProductServiceDescription = "DeleteProductServiceDescription";
+        public const string AddProductServiceDescription = "AddProductServiceDescription";
+        public const string UpdateProductServiceDescription = "UpdateProductServiceDescription";
+        public const string StopProductServiceDescription = "StopProductServiceDescription";
+        public const string GetProductSourcesServiceDescription = "GetProductSourcesServiceDescription";
+        public const string GetProductCategoriesServiceDescription = "GetProductCategoriesServiceDescription";
+        public const string ProductId = "ProductId";
 
         public const string Code = "Code";
 
@@ -198,5 +273,8 @@ namespace StockMount.Out.Sample.Utils.Language
         public static string PageIndexDescription = "PageIndexDescription"; 
         public static string PageIndex = "PageIndex"; 
         public static string RowsByPageDescription = "RowsByPageDescription";
+
+
+
     }
 }

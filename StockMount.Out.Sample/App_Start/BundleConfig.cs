@@ -60,7 +60,22 @@ namespace StockMount.Out.Sample
 
             bundles.Add(new ScriptBundle("~/js/SetMessageRead").Include(
                         "~/Scripts/pages/SetMessageRead.js"));
-            
+            bundles.Add(new ScriptBundle("~/js/GetCurrencies").Include(
+                        "~/Scripts/pages/GetCurrencies.js"));
+            bundles.Add(new ScriptBundle("~/js/GetProduct").Include(
+                        "~/Scripts/pages/GetProduct.js"));
+            bundles.Add(new ScriptBundle("~/js/DeleteProduct").Include(
+                                    "~/Scripts/pages/DeleteProduct.js"));
+            bundles.Add(new ScriptBundle("~/js/AddProduct").Include(
+                                    "~/Scripts/pages/AddProduct.js"));
+            bundles.Add(new ScriptBundle("~/js/UpdateProduct").Include(
+                                    "~/Scripts/pages/UpdateProduct.js"));
+            bundles.Add(new ScriptBundle("~/js/StopProduct").Include(
+                                    "~/Scripts/pages/StopProduct.js"));
+            bundles.Add(new ScriptBundle("~/js/GetProductSources").Include(
+                                   "~/Scripts/pages/GetProductSources.js"));
+            bundles.Add(new ScriptBundle("~/js/GetProductCategories").Include(
+                                  "~/Scripts/pages/GetProductCategories.js"));
 
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));

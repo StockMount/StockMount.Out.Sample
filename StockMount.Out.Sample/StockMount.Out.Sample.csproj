@@ -192,17 +192,13 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Constant.cs" />
     <Compile Include="Models\OperationResult.cs" />
-    <Compile Include="Models\ServicesModels\ConfirmOrRejectOrderItemCriteria.cs" />
     <Compile Include="Models\ServicesModels\CriteriaBase.cs" />
-    <Compile Include="Models\ServicesModels\GetIntegrationShipmentCompanyCriteria.cs" />
-    <Compile Include="Models\ServicesModels\GetMessageCriteria.cs" />
-    <Compile Include="Models\ServicesModels\GetSaleCriteria.cs" />
-    <Compile Include="Models\ServicesModels\GetStoreCriteria.cs" />
+    <Compile Include="Models\ServicesModels\General.cs" />
+    <Compile Include="Models\ServicesModels\Criteria.cs" />
     <Compile Include="Models\ServicesModels\IntegrationShipmentCompany.cs" />
     <Compile Include="Models\ServicesModels\Login.cs" />
     <Compile Include="Models\ServicesModels\Order.cs" />
-    <Compile Include="Models\ServicesModels\SetMessageCriteria.cs" />
-    <Compile Include="Models\ServicesModels\SetShipmentCriteria.cs" />
+    <Compile Include="Models\ServicesModels\Product.cs" />
     <Compile Include="Models\ServicesModels\Store.cs" />
     <Compile Include="Models\ServicesModels\User.cs" />
     <Compile Include="Models\ServicesModels\UserMessages.cs" />
@@ -221,6 +217,8 @@
     </Compile>
     <Compile Include="Utils\ServiceHelper\AuthenticationService.cs" />
     <Compile Include="Utils\ServiceHelper\BaseServiceHelper.cs" />
+    <Compile Include="Utils\ServiceHelper\GeneralService.cs" />
+    <Compile Include="Utils\ServiceHelper\ProductService.cs" />
     <Compile Include="Utils\ServiceHelper\IntegrationService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -321,14 +319,22 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Pages\GetProductCategories.js" />
+    <Content Include="Scripts\Pages\GetProductSources.js" />
+    <Content Include="Scripts\Pages\StopProduct.js" />
+    <Content Include="Scripts\Pages\UpdateProduct.js" />
     <Content Include="Scripts\Pages\ConfirmOrRejectOrderItem.js" />
     <Content Include="Scripts\Pages\doLogin.js" />
     <Content Include="Scripts\Pages\GetAllUserMessage.js" />
     <Content Include="Scripts\Pages\GetIntegrationShipmentCompanies.js" />
     <Content Include="Scripts\Pages\GetMessages.js" />
+    <Content Include="Scripts\Pages\DeleteProduct.js" />
     <Content Include="Scripts\Pages\GetSales.js" />
+    <Content Include="Scripts\Pages\GetCurrencies.js" />
+    <Content Include="Scripts\Pages\GetProduct.js" />
     <Content Include="Scripts\Pages\GetStores.js" />
     <Content Include="Scripts\Pages\SendUserMessage.js" />
+    <Content Include="Scripts\Pages\AddProduct.js" />
     <Content Include="Scripts\Pages\SetMessageRead.js" />
     <Content Include="Scripts\Pages\SetOrderShipmentInformation.js" />
     <Content Include="Web.config">
@@ -382,6 +388,14 @@
     <Content Include="Views\Guide\Documentation.cshtml" />
     <Content Include="Views\Guide\LicensesEn.cshtml" />
     <Content Include="Views\Guide\LicensesTr.cshtml" />
+    <Content Include="Views\Home\GetCurrencies.cshtml" />
+    <Content Include="Views\Home\GetProduct.cshtml" />
+    <Content Include="Views\Home\DeleteProduct.cshtml" />
+    <Content Include="Views\Home\AddProduct.cshtml" />
+    <Content Include="Views\Home\UpdateProduct.cshtml" />
+    <Content Include="Views\Home\StopProduct.cshtml" />
+    <Content Include="Views\Home\GetProductSources.cshtml" />
+    <Content Include="Views\Home\GetProductCategories.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

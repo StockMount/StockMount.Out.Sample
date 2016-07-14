@@ -1,0 +1,44 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = @Message.GetMessage(MessageCode.GetCurrenciesService, Culture);
+}
+<div class="caption-full">
+    <h2>@Message.GetMessage(MessageCode.GetCurrenciesService, Culture)</h2>
+
+    <div class="clearfix">
+        <hr />
+    </div>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.GetCurrenciesServiceDescription, Culture))
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestType, Culture):</strong>
+        <br />  Post
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestUrl, Culture): </strong>
+        <br /> https://out.stockmount.com/api/General/GetCurrencies
+    </p>
+
+    <a class="btn btn-success" id="btn-test">@Message.GetMessage(MessageCode.TestService, Culture) </a>
+
+    <div class="well display-none margin-top-10" id="test-area">
+        <a class="btn btn-success" id="btn-execute">@Message.GetMessage(MessageCode.Execute, Culture) </a>
+        <div class="clearfix"></div>
+        <br />
+        <div class="bg-warning display-hide" id="response-area">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/js/GetCurrencies")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            GetCurrencies.init();
+        });
+
+    </script>
+}

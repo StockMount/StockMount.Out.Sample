@@ -283,7 +283,203 @@ namespace StockMount.Out.Sample.Controllers
                 Result = result
             }, JsonRequestBehavior.AllowGet);
         }
-        
 
+
+        public JsonResult GetCurrencies()
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                GetCurrencyCriteria getCurrencyCriteria = new GetCurrencyCriteria();
+                if (Session["ApiCode"] != null)
+                    getCurrencyCriteria.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.GeneralService.GetCurrencies(getCurrencyCriteria);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
+
+
+        #region Product
+        public JsonResult GetProduct(string param)
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                GetProductCriteria getProductCriteria = JsonConvert.DeserializeObject<GetProductCriteria>(param);
+                if (Session["ApiCode"] != null)
+                    getProductCriteria.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.ProductService.GetProduct(getProductCriteria);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult DeleteProduct(string param)
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                GetProductCriteria getProductCriteria = JsonConvert.DeserializeObject<GetProductCriteria>(param);
+                if (Session["ApiCode"] != null)
+                    getProductCriteria.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.ProductService.DeleteProduct(getProductCriteria);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult AddProduct(string param)
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                Product product = JsonConvert.DeserializeObject<Product>(param);
+                if (Session["ApiCode"] != null)
+                    product.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.ProductService.AddProduct(product);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult UpdateProduct(string param)
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                Product product = JsonConvert.DeserializeObject<Product>(param);
+                if (Session["ApiCode"] != null)
+                    product.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.ProductService.UpdateProduct(product);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult StopProduct(string param)
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                GetProductCriteria getProductCriteria = JsonConvert.DeserializeObject<GetProductCriteria>(param);
+                if (Session["ApiCode"] != null)
+                    getProductCriteria.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.ProductService.StopProduct(getProductCriteria);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult GetProductSources(string param)
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                GetProductSourcesCriteria getProductSourcesCriteria = JsonConvert.DeserializeObject<GetProductSourcesCriteria>(param);
+                if (Session["ApiCode"] != null)
+                    getProductSourcesCriteria.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.ProductService.GetProductSources(getProductSourcesCriteria);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult GetProductCategories(string param)
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                GetProductCategoriesCriteria getProductCategoriesCriteria = JsonConvert.DeserializeObject<GetProductCategoriesCriteria>(param);
+                if (Session["ApiCode"] != null)
+                    getProductCategoriesCriteria.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.ProductService.GetProductCategories(getProductCategoriesCriteria);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
     }
 }

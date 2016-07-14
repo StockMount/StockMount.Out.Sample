@@ -528,4 +528,133 @@ Welcome to world of StockMount !..&lt;br/&gt;
   <data name="RowsByPageDescription" xml:space="preserve">
     <value>how many item will be  retrieved</value>
   </data>
+  <data name="GetCurrenciesService" xml:space="preserve">
+    <value>GetCurrencies</value>
+  </data>
+  <data name="GetCurrenciesServiceDescription" xml:space="preserve">
+    <value>This service gets the available currencies in the system</value>
+  </data>
+  <data name="DeleteProductService" xml:space="preserve">
+    <value>DeleteProduct</value>
+  </data>
+  <data name="DeleteProductServiceDescription" xml:space="preserve">
+    <value>This function deletes the product with the given Id</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="GetProductService" xml:space="preserve">
+    <value>GetProduct</value>
+  </data>
+  <data name="GetProductServiceDescription" xml:space="preserve">
+    <value>This function returns a product given its Id</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="ProductId" xml:space="preserve">
+    <value>Product Id</value>
+  </data>
+  <data name="AddProductService" xml:space="preserve">
+    <value>AddProduct</value>
+  </data>
+  <data name="AddProductServiceDescription" xml:space="preserve">
+    <value>This function adds a new product with the given parameters</value>
+  </data>
+  <data name="Barcode" xml:space="preserve">
+    <value>Barcode</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CurrencyId" xml:space="preserve">
+    <value>Currency Id</value>
+  </data>
+  <data name="GetProductCategoriesService" xml:space="preserve">
+    <value>GetProductCategories</value>
+  </data>
+  <data name="GetProductCategoriesServiceDescription" xml:space="preserve">
+    <value>This function gets the categories of a product source with a given id</value>
+  </data>
+  <data name="GetProductSourcesService" xml:space="preserve">
+    <value>GetProductSources</value>
+  </data>
+  <data name="GetProductSourcesServiceDescription" xml:space="preserve">
+    <value>This function gets the product sources</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="ImageUrl" xml:space="preserve">
+    <value>Image url</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>Length</value>
+  </data>
+  <data name="MarketPrice" xml:space="preserve">
+    <value>Market Price</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="ProductSourceId" xml:space="preserve">
+    <value>Product Source Id</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="Specs" xml:space="preserve">
+    <value>Specs</value>
+  </data>
+  <data name="StopProductService" xml:space="preserve">
+    <value>StopProduct</value>
+  </data>
+  <data name="StopProductServiceDescription" xml:space="preserve">
+    <value>This function stops selling for a product with a given id</value>
+  </data>
+  <data name="Subtitle" xml:space="preserve">
+    <value>Subtitle</value>
+  </data>
+  <data name="TaxRate" xml:space="preserve">
+    <value>Tax Rate</value>
+  </data>
+  <data name="UpdateProductService" xml:space="preserve">
+    <value>UpdateProduct</value>
+  </data>
+  <data name="UpdateProductServiceDescription" xml:space="preserve">
+    <value>This function updates the product with the given id and parameters</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="Value" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="VariantName" xml:space="preserve">
+    <value>Variant Name</value>
+  </data>
+  <data name="Variants" xml:space="preserve">
+    <value>Variants</value>
+  </data>
+  <data name="VariantValue" xml:space="preserve">
+    <value>Variant value</value>
+  </data>
+  <data name="Volume" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Width</value>
+  </data>
 </root>
