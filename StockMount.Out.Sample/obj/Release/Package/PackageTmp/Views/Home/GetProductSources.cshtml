@@ -1,0 +1,45 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = @Message.GetMessage(MessageCode.GetProductSourcesService, Culture);
+}
+<div class="caption-full">
+    <h2>@Message.GetMessage(MessageCode.GetProductSourcesService, Culture)</h2>
+
+    <div class="clearfix">
+        <hr />
+    </div>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.GetProductSourcesServiceDescription, Culture))
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestType, Culture):</strong>
+        <br />  Post
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestUrl, Culture): </strong>
+        <br /> https://out.stockmount.com/api/Product/GetProductSources
+    </p>
+
+    <a class="btn btn-success" id="btn-test">@Message.GetMessage(MessageCode.TestService, Culture) </a>
+
+    <div class="well display-none margin-top-10" id="test-area">
+     
+        <a class="btn btn-success" id="btn-execute">@Message.GetMessage(MessageCode.Execute, Culture) </a>
+        <div class="clearfix"></div>
+        <br />
+        <div class="bg-warning display-hide" id="response-area">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/js/GetProductSources")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            GetProductSources.init();
+        });
+
+    </script>
+}

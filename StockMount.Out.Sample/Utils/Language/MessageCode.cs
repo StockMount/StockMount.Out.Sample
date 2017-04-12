@@ -275,6 +275,9 @@ namespace StockMount.Out.Sample.Utils.Language
         public static string RowsByPageDescription = "RowsByPageDescription";
 
 
+        public static string Open = "Open";
+        public static string Unpacked = "Unpacked";
+
 
     }
 }

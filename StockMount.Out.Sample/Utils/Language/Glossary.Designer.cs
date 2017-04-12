@@ -889,6 +889,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open.
+        /// </summary>
+        internal static string Open {
+            get {
+                return ResourceManager.GetString("Open", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Order Detail Id.
         /// </summary>
         internal static string OrderDetailId {
@@ -1533,6 +1542,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string To {
             get {
                 return ResourceManager.GetString("To", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unpacked.
+        /// </summary>
+        internal static string Unpacked {
+            get {
+                return ResourceManager.GetString("Unpacked", resourceCulture);
             }
         }
         

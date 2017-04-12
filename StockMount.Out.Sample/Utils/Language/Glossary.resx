@@ -657,4 +657,10 @@ Welcome to world of StockMount !..&lt;br/&gt;
   <data name="Width" xml:space="preserve">
     <value>Width</value>
   </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Unpacked" xml:space="preserve">
+    <value>Unpacked</value>
+  </data>
 </root>

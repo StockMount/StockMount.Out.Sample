@@ -657,4 +657,10 @@ StockMount dünyasına hoş geldiniz !..&lt;br/&gt;
   <data name="Width" xml:space="preserve">
     <value>En</value>
   </data>
+  <data name="Open" xml:space="preserve">
+    <value>Açık</value>
+  </data>
+  <data name="Unpacked" xml:space="preserve">
+    <value>İptal Edildi</value>
+  </data>
 </root>
