@@ -336,6 +336,33 @@ namespace StockMount.Out.Sample.Controllers
                 Result = result
             }, JsonRequestBehavior.AllowGet);
         }
+
+        //GetProducts
+
+        public JsonResult GetProducts(string param)
+        {
+            OperationResult result = new OperationResult();
+            try
+            {
+                GetProductsCriteria getProductsCriteria = JsonConvert.DeserializeObject<GetProductsCriteria>(param);
+                if (Session["ApiCode"] != null)
+                    getProductsCriteria.ApiCode = Session["ApiCode"].ToString();
+                result =
+                    Utils.ServiceHelper.ProductService.GetProducts(getProductsCriteria);
+
+            }
+            catch (Exception ex)
+            {
+                result.ErrorMessage = ex.Message;
+
+            }
+
+
+            return Json(new
+            {
+                Result = result
+            }, JsonRequestBehavior.AllowGet);
+        }
         public JsonResult DeleteProduct(string param)
         {
             OperationResult result = new OperationResult();

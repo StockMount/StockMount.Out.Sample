@@ -128,6 +128,12 @@ namespace StockMount.Out.Sample.Controllers
             return View();
         }
 
+        public ActionResult GetProducts()
+        {
+            ViewBag.Message = Message.GetMessage(MessageCode.GetProductsService, GetRequestCulture());
+            return View();
+        }
+
         public ActionResult DeleteProduct()
         {
             ViewBag.Message = Message.GetMessage(MessageCode.DeleteProductService, GetRequestCulture());

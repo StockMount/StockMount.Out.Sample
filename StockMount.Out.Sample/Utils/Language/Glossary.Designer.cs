@@ -559,6 +559,24 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GetProducts.
+        /// </summary>
+        internal static string GetProductsService {
+            get {
+                return ResourceManager.GetString("GetProductsService", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This function searched products of a product source upon a criteria.
+        /// </summary>
+        internal static string GetProductsServiceDescription {
+            get {
+                return ResourceManager.GetString("GetProductsServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GetSales.
         /// </summary>
         internal static string GetSalesService {

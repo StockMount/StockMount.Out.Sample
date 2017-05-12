@@ -32,6 +32,29 @@ namespace StockMount.Out.Sample.Utils.ServiceHelper
             return operationResult;
         }
 
+        public static OperationResult GetProducts(GetProductsCriteria getProductsCriteria)
+        {
+            //POST
+            var client = GetClient();
+            OperationResult operationResult = new OperationResult();
+
+            using (HttpResponseMessage response = client.PostAsJsonAsync("Product/GetProducts", getProductsCriteria).Result)
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    operationResult = response.Content.ReadAsAsync<OperationResult>().Result;
+                    if (operationResult.Result)
+                        operationResult.Response = JsonConvert.DeserializeObject<GetProductsResult>(operationResult.Response.ToString());
+                }
+                else
+                {
+                    operationResult.ErrorMessage = String.Format("Status Code: {0}, Reason Pharse: {1}",
+                        response.StatusCode, response.ReasonPhrase);
+                }
+            }
+            return operationResult;
+        }
+
         public static OperationResult DeleteProduct(GetProductCriteria getProductCriteria)
         {
             //POST

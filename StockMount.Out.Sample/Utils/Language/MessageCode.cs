@@ -269,15 +269,21 @@ namespace StockMount.Out.Sample.Utils.Language
 
 
 
-        public static string RowsByPage = "RowsByPage"; 
-        public static string PageIndexDescription = "PageIndexDescription"; 
-        public static string PageIndex = "PageIndex"; 
-        public static string RowsByPageDescription = "RowsByPageDescription";
+        public const string RowsByPage = "RowsByPage";
+        public const string PageIndexDescription = "PageIndexDescription";
+        public const string PageIndex = "PageIndex";
+        public const string RowsByPageDescription = "RowsByPageDescription";
 
 
-        public static string Open = "Open";
-        public static string Unpacked = "Unpacked";
+        public const string Open = "Open";
+        public const string Unpacked = "Unpacked";
 
 
+
+        public const string GetProductsServiceDescription = "GetProductsServiceDescription";
+
+        public const string All = "All";
+
+        public const string GetProductsService = "GetProductsService";
     }
 }

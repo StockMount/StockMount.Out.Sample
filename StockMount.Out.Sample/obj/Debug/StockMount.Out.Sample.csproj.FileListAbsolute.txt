@@ -429,3 +429,9 @@ E:\Projects\StockMount.Out.Sample\StockMount.Out.Sample\obj\Debug\StockMount.Out
 E:\Projects\StockMount.Out.Sample\StockMount.Out.Sample\obj\Debug\tr\StockMount.Out.Sample.resources.dll
 E:\Projects\StockMount.Out.Sample\StockMount.Out.Sample\obj\Debug\StockMount.Out.Sample.dll
 E:\Projects\StockMount.Out.Sample\StockMount.Out.Sample\obj\Debug\StockMount.Out.Sample.pdb
+C:\Projects\StockMount-DotNet-v2\StockMount.Out.Sample\StockMount.Out.Sample\bin\System.Net.Http.Formatting.dll
+C:\Projects\StockMount-DotNet-v2\StockMount.Out.Sample\StockMount.Out.Sample\bin\System.Web.Http.dll
+C:\Projects\StockMount-DotNet-v2\StockMount.Out.Sample\StockMount.Out.Sample\bin\System.Web.Http.WebHost.dll
+C:\Projects\StockMount-DotNet-v2\StockMount.Out.Sample\StockMount.Out.Sample\bin\System.Net.Http.Formatting.xml
+C:\Projects\StockMount-DotNet-v2\StockMount.Out.Sample\StockMount.Out.Sample\bin\System.Web.Http.xml
+C:\Projects\StockMount-DotNet-v2\StockMount.Out.Sample\StockMount.Out.Sample\bin\System.Web.Http.WebHost.xml

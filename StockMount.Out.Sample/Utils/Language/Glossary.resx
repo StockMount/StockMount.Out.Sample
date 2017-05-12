@@ -663,4 +663,10 @@ Welcome to world of StockMount !..&lt;br/&gt;
   <data name="Unpacked" xml:space="preserve">
     <value>Unpacked</value>
   </data>
+  <data name="GetProductsService" xml:space="preserve">
+    <value>GetProducts</value>
+  </data>
+  <data name="GetProductsServiceDescription" xml:space="preserve">
+    <value>This function searched products of a product source upon a criteria</value>
+  </data>
 </root>

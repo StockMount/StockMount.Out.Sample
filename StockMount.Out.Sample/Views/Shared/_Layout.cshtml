@@ -44,8 +44,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">@Message.GetMessage(MessageCode.Language, Culture) <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#" class="culture" data-culter="@Constant.Culture.English">English</a></li>
-                                <li><a href="#" class="culture" data-culter="@Constant.Culture.Turkish">Türkçe</a></li> 
+                                <li><a href="#" class="culture" data-culture="@Constant.Culture.English">English</a></li>
+                                <li><a href="#" class="culture" data-culture="@Constant.Culture.Turkish">Türkçe</a></li> 
                             </ul>
                         </li> 
                     </ul>
@@ -154,10 +154,13 @@
                                                 <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetProductSources">@Message.GetMessage(MessageCode.GetProductSourcesService, Culture) </a>
                                             </li>
                                             <li class="list-group-item @(link == "/home/getproductcategories" ? "active" : "")">
-                                                <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetProductCategories">@Message.GetMessage(MessageCode.GetProductCategoriesService, Culture) </a>
+                                                <span class="glyphicon glyphicon-list text-menu-item"></span><a href="/Home/GetProductCategories">@Message.GetMessage(MessageCode.GetProductCategoriesService, Culture) </a>
                                             </li>
                                             <li class="list-group-item @(link == "/home/getproduct" ? "active" : "")">
                                                 <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetProduct">@Message.GetMessage(MessageCode.GetProductService, Culture) </a>
+                                            </li>
+                                            <li class="list-group-item @(link == "/home/getproducts" ? "active" : "")">
+                                                <span class="glyphicon glyphicon-book text-menu-item"></span><a href="/Home/GetProducts">@Message.GetMessage(MessageCode.GetProductsService, Culture) </a>
                                             </li>
                                            
                                             <li class="list-group-item @(link == "/home/addproduct" ? "active" : "")">
@@ -293,20 +296,18 @@
 
         <script src="~/Scripts/jquery.cookie.js"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
-              $('.culture').on("click", function () {
-                    $.removeCookie("culture");
-                    $.cookie("culture", $(this).attr('data-culter'), { expires: 1000, path: "/" });
+            $(document)
+                .ready(function() {
+                    $('.culture')
+                        .on("click",
+                            function() {
+                                $.removeCookie("culture");
+                                $.cookie("culture", $(this).attr('data-culture'), { expires: 1000, path: "/" });
 
-                    if (getUrlEncodedKey('UserCulture', location.search) == '') {
-
-                        window.location = window.location  ;
-                    }
-                    else location.reload();
-
-                    //location.reload();
+                                window.location = clearUrlParameters(window.location.href) + "?UserCulture=" + $(this).attr('data-culture');
+                            });
                 });
-            });
+
             var getUrlEncodedKey = function (key, query) {
                 if (!query)
                     query = window.location.search;
@@ -316,6 +317,20 @@
                     return "";
                 return decodeURIComponent(matches[1].replace("+", " "));
             };
+
+            var clearUrlParameters = function (oldURL) {
+                var index = 0;
+                var newURL = oldURL;
+                index = oldURL.indexOf('?');
+                if (index == -1) {
+                    index = oldURL.indexOf('#');
+                }
+                if (index != -1) {
+                    newURL = oldURL.substring(0, index);
+                }
+
+                return newURL;
+            }
         </script>
         
 

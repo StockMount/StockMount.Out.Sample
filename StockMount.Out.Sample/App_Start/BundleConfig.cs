@@ -76,7 +76,8 @@ namespace StockMount.Out.Sample
                                    "~/Scripts/pages/GetProductSources.js"));
             bundles.Add(new ScriptBundle("~/js/GetProductCategories").Include(
                                   "~/Scripts/pages/GetProductCategories.js"));
-
+            bundles.Add(new ScriptBundle("~/js/GetProducts").Include(
+                                  "~/Scripts/pages/GetProducts.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
 

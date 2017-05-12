@@ -195,6 +195,7 @@
     <Compile Include="Models\ServicesModels\CriteriaBase.cs" />
     <Compile Include="Models\ServicesModels\General.cs" />
     <Compile Include="Models\ServicesModels\Criteria.cs" />
+    <Compile Include="Models\ServicesModels\GetProductsResult.cs" />
     <Compile Include="Models\ServicesModels\IntegrationShipmentCompany.cs" />
     <Compile Include="Models\ServicesModels\Login.cs" />
     <Compile Include="Models\ServicesModels\Order.cs" />
@@ -319,6 +320,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Pages\GetProducts.js" />
     <Content Include="Scripts\Pages\GetProductCategories.js" />
     <Content Include="Scripts\Pages\GetProductSources.js" />
     <Content Include="Scripts\Pages\StopProduct.js" />
@@ -396,6 +398,7 @@
     <Content Include="Views\Home\StopProduct.cshtml" />
     <Content Include="Views\Home\GetProductSources.cshtml" />
     <Content Include="Views\Home\GetProductCategories.cshtml" />
+    <Content Include="Views\Home\GetProducts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

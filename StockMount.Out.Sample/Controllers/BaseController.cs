@@ -15,6 +15,13 @@ namespace StockMount.Out.Sample.Controllers
         protected override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             RequestCulture = GetRequestCulture();
+
+            
+            string culture = CheckCulture();
+
+            if (!string.IsNullOrEmpty(culture))
+                RequestCulture = culture;
+
             RequestCulture = RequestCulture ?? Constant.Culture.English;
              
 
@@ -51,6 +58,32 @@ namespace StockMount.Out.Sample.Controllers
             }
              
             return userCulture;
+        }
+
+
+        protected string CheckCulture()
+        {
+
+            string culture = string.Empty;
+            try
+            {
+                if (Request.QueryString["UserCulture"] != null)
+                {
+                    culture = Request.QueryString["UserCulture"];
+                    HttpCookie currCookie = new HttpCookie("culture");
+                    currCookie.Value = culture;
+                    currCookie.Expires = DateTime.Now.AddDays(1000);
+                    currCookie.Path = "/";
+                    Response.Cookies.Add(currCookie);
+                }
+                    
+            }
+            catch (Exception)
+            {
+
+            }
+
+            return culture;
         }
     }
 

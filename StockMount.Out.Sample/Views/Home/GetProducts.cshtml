@@ -1,0 +1,76 @@
+﻿@using StockMount.Out.Sample.Utils.Language
+@{
+    ViewBag.Title = @Message.GetMessage(MessageCode.GetProductService, Culture);
+}
+<div class="caption-full">
+    <h2>@Message.GetMessage(MessageCode.GetProductsService, Culture)</h2>
+
+    <div class="clearfix">
+        <hr />
+    </div>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.GetProductsServiceDescription, Culture))
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestType, Culture):</strong>
+        <br />  Post
+    </p>
+    <p>
+        <strong>@Message.GetMessage(MessageCode.RequestUrl, Culture): </strong>
+        <br/> https://out.stockmount.com/api/Product/GetProducts
+    </p>
+
+ 
+
+    <a class="btn btn-success" id="btn-test">@Message.GetMessage(MessageCode.TestService, Culture) </a>
+
+    <div class="well display-none margin-top-10" id="test-area">
+        <div class="form-group ">
+            <label for="product-source-id">@Message.GetMessage(MessageCode.ProductSourceId, Culture)  <span class="label label-danger">@Message.GetMessage(MessageCode.Required, Culture)</span> </label>
+            <input type="text" class="form-control" id="product-source-id" placeholder="@Message.GetMessage(MessageCode.ProductSourceId, Culture)" value="0">
+        </div>
+        <div class="form-group ">
+            <label for="product">@Message.GetMessage(MessageCode.ProductId, Culture) </label>
+            <input type="number" class="form-control" id="product" placeholder="@Message.GetMessage(MessageCode.ProductId, Culture)" value="0">
+        </div>
+        <div class="form-group ">
+            <label for="product-code">@Message.GetMessage(MessageCode.Code, Culture) </label>
+            <input type="text" class="form-control" id="product-code" placeholder="@Message.GetMessage(MessageCode.Code, Culture)" value="">
+        </div>
+        <div class="form-group ">
+            <label for="product-code">@Message.GetMessage(MessageCode.Name, Culture) </label>
+            <input type="text" class="form-control" id="product-name" placeholder="@Message.GetMessage(MessageCode.Name, Culture)" value="">
+        </div>
+        <div class="form-group ">
+            <label for="status">@Message.GetMessage(MessageCode.Status, Culture) </label>
+            <input type="number" class="form-control" id="product-status" placeholder="@Message.GetMessage(MessageCode.Status, Culture)" value="-1">
+        </div>
+
+        <div class="form-group">
+            <label for="rowsByPage">@Message.GetMessage(MessageCode.RowsByPage, Culture) <br /><small>@Message.GetMessage(MessageCode.RowsByPageDescription, Culture)</small> </label>
+            <input type="number" class="form-control" id="rowsByPage" placeholder="@Message.GetMessage(MessageCode.RowsByPage, Culture) (Max: 100)" value="10">
+        </div>
+        <div class="form-group">
+            <label for="pageIndex">@Message.GetMessage(MessageCode.PageIndex, Culture) <br /><small>@Message.GetMessage(MessageCode.PageIndexDescription, Culture)</small> </label>
+            <input type="number" class="form-control" id="pageIndex" placeholder="@Message.GetMessage(MessageCode.PageIndex, Culture)" value="1">
+        </div>
+
+        <a class="btn btn-success" id="btn-execute">@Message.GetMessage(MessageCode.Execute, Culture) </a>
+        <div class="clearfix"></div>
+        <br />
+        <div class="bg-warning display-hide" id="response-area">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/js/GetProducts")
+    <script type="text/javascript">
+        $(document).ready(function () {
+            GetProducts.init();
+        });
+
+    </script>
+}

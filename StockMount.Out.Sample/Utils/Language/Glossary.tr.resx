@@ -663,4 +663,10 @@ StockMount dünyasına hoş geldiniz !..&lt;br/&gt;
   <data name="Unpacked" xml:space="preserve">
     <value>İptal Edildi</value>
   </data>
+  <data name="GetProductsService" xml:space="preserve">
+    <value>GetProducts</value>
+  </data>
+  <data name="GetProductsServiceDescription" xml:space="preserve">
+    <value>Bu fonksiyon verilen kritere göre ürün bilgilerine ulaşmak için kullanılır</value>
+  </data>
 </root>

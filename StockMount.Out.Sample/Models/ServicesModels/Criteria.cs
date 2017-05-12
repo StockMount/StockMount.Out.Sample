@@ -116,4 +116,28 @@ namespace StockMount.Out.Sample.Models.ServicesModels
     {
         public int ProductSourceId { get; set; }
     }
+
+
+    public class GetProductsCriteria : CriteriaBase
+    {
+        public int ProductSourceId { get; set; }
+        public int ProductId { get; set; }
+        public string ProductCode { get; set; }
+        public string Keywords { get; set; }
+        public string ProductCategory { get; set; }
+        public decimal PriceFrom { get; set; }
+        public decimal PriceTo { get; set; }
+        public int QuantityFrom { get; set; }
+        public int QuantityTo { get; set; }
+        public int CurrencyId { get; set; }
+        public int ProductStatus { get; set; }
+        public DateTime CreationTimeFrom { get; set; }
+        public DateTime CreationTimeTo { get; set; }
+        public int RowsByPage { get; set; }
+        public int PageIndex { get; set; }
+        public string OrderBy { get; set; }
+
+        public string OrderDirection { get; set; }
+
+    }
 }
