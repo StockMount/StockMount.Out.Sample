@@ -669,4 +669,58 @@ StockMount dünyasına hoş geldiniz !..&lt;br/&gt;
   <data name="GetProductsServiceDescription" xml:space="preserve">
     <value>Bu fonksiyon verilen kritere göre ürün bilgilerine ulaşmak için kullanılır</value>
   </data>
+  <data name="AkakceCanceledByCustomer" xml:space="preserve">
+    <value>Müşteri Tarafından İptal Edildi</value>
+  </data>
+  <data name="AkakceCompleted" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="AkakceRejectedBySeller" xml:space="preserve">
+    <value>Satıcı Tarafından Reddedildi</value>
+  </data>
+  <data name="AkakceShippedWithoutTrackNo" xml:space="preserve">
+    <value>Takip Numarası Olmadan Kargolandı</value>
+  </data>
+  <data name="AkakceWaitingConfirmation" xml:space="preserve">
+    <value>Onay Bekliyor</value>
+  </data>
+  <data name="AkakceWaitingShipment" xml:space="preserve">
+    <value>Kargo Bekleniyor</value>
+  </data>
+  <data name="EpttCancellationRequest" xml:space="preserve">
+    <value>İade</value>
+  </data>
+  <data name="EpttCompleted" xml:space="preserve">
+    <value>Tamamlandı</value>
+  </data>
+  <data name="EpttPaymentCancelled" xml:space="preserve">
+    <value>Ödeme Geçersiz</value>
+  </data>
+  <data name="EpttPreparing" xml:space="preserve">
+    <value>Hazırlanıyor</value>
+  </data>
+  <data name="EpttReturnedOrder" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="EpttReturnedToSeller" xml:space="preserve">
+    <value>Göndericisine Teslim Edildi</value>
+  </data>
+  <data name="EpttShipped" xml:space="preserve">
+    <value>Gönderildi</value>
+  </data>
+  <data name="EpttWaitingCargo" xml:space="preserve">
+    <value>Kargo Yapılması Bekleniyor</value>
+  </data>
+  <data name="EpttWaitingConfirmation" xml:space="preserve">
+    <value>Onay Sürecinde</value>
+  </data>
+  <data name="EpttWaitingPayment" xml:space="preserve">
+    <value>Ödeme Bekleniyor</value>
+  </data>
+  <data name="GgCancellationRequest" xml:space="preserve">
+    <value>İptal Talebi</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Bilinmiyor</value>
+  </data>
 </root>

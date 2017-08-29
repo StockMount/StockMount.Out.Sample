@@ -61,6 +61,9 @@ namespace StockMount.Out.Sample.Models.ServicesModels
         public string InvoiceNumber { get; set; }
         public string WayBillNumber { get; set; }
         public string PackageNumber { get; set; }
+        public DateTime InvoiceTime { get; set; }
+        public DateTime WayBillTime { get; set; }
+        public DateTime PackageTime { get; set; }
     }
 
     public class StoreOrders  

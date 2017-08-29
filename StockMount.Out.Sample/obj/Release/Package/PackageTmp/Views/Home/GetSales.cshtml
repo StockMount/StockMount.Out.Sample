@@ -10,7 +10,7 @@
     </div>
     <p>
         <strong>@Message.GetMessage(MessageCode.Description, Culture):</strong>
-        <br /> @Html.Raw(Message.GetMessage(MessageCode.GetSalesServiceDescription, Culture)) 
+        <br /> @Html.Raw(Message.GetMessage(MessageCode.GetSalesServiceDescription, Culture))
 
 
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -35,7 +35,7 @@
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody >
+                            <tbody>
                                 <tr>
                                     <td>
                                         P
@@ -89,6 +89,23 @@
                                         @Message.GetMessage(MessageCode.GgCompleted, Culture)
                                     </td>
                                 </tr>
+                                
+                            <tr>
+                                <td>
+                                    I
+                                </td>
+                                <td>
+                                    @Message.GetMessage(MessageCode.GgCancellationRequest, Culture)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Unknown
+                                </td>
+                                <td>
+                                    @Message.GetMessage(MessageCode.Unknown, Culture)
+                                </td>
+                            </tr>
 
                             </tbody>
                         </table>
@@ -171,143 +188,150 @@
                                         @Message.GetMessage(MessageCode.N11Completed, Culture)
                                     </td>
                                 </tr>
-
+                                <tr>
+                                    <td>
+                                        Unknown
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.Unknown, Culture)
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
             <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingThree">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        SanalPazar - @Message.GetMessage(MessageCode.OrderStatus, Culture)
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            SanalPazar - @Message.GetMessage(MessageCode.OrderStatus, Culture)
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
 
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>
-                                @Message.GetMessage(MessageCode.Code, Culture)
-                            </th>
-                            <th>
-                                @Message.GetMessage(MessageCode.Description, Culture)
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody class="">
-                        <tr>
-                            <td>
-                                ODEME_ONAYI_BEKLENIYOR
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpPaymentConfirmation, Culture)
-                            </td>
-                        </tr>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Message.GetMessage(MessageCode.Code, Culture)
+                                    </th>
+                                    <th>
+                                        @Message.GetMessage(MessageCode.Description, Culture)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td>
+                                        ODEME_ONAYI_BEKLENIYOR
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpPaymentConfirmation, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                KARGO_GONDERIMI_BEKLENIYOR
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpWaitingShipment, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        KARGO_GONDERIMI_BEKLENIYOR
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpWaitingShipment, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                KARGO_ALICIYA_ULASMADI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpShipmentNotReceived, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        KARGO_ALICIYA_ULASMADI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpShipmentNotReceived, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                KARGO_TESLIMATI_BEKLENIYOR
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpShipmentOnWay, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        KARGO_TESLIMATI_BEKLENIYOR
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpShipmentOnWay, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                ALICI_URUNU_ONAYLADI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpCustomerConfirmed, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        ALICI_URUNU_ONAYLADI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpCustomerConfirmed, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                ALICI_URUNU_IADE_ETTI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpCustomerReturned, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        ALICI_URUNU_IADE_ETTI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpCustomerReturned, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                PARA_TRANSFERI_YAPILDI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpMoneyTransfer, Culture)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                ALICIYA_PARA_IADESI_YAPILDI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpMoneyRefund, Culture)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                SIPARIS_ASKIYA_ALINDI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpOrderSuspensed, Culture)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                SATICI_IPTAL_ETTI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpSellerCancelled, Culture)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                ALICI_IPTAL_ETTI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpCustomerCancelled, Culture)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                SANALPAZAR_IPTAL_ETTI
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SpSanalPazarCancelled, Culture)
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <td>
+                                        PARA_TRANSFERI_YAPILDI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpMoneyTransfer, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ALICIYA_PARA_IADESI_YAPILDI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpMoneyRefund, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        SIPARIS_ASKIYA_ALINDI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpOrderSuspensed, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        SATICI_IPTAL_ETTI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpSellerCancelled, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ALICI_IPTAL_ETTI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpCustomerCancelled, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        SANALPAZAR_IPTAL_ETTI
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SpSanalPazarCancelled, Culture)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-            
+
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingFive">
                     <h4 class="panel-title">
@@ -355,90 +379,282 @@
                 </div>
             </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" role="tab" id="headingFour">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                        StocktMount - @Message.GetMessage(MessageCode.OrderStatus, Culture)
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingFour">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            StocktMount - @Message.GetMessage(MessageCode.OrderStatus, Culture)
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
 
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>
-                                @Message.GetMessage(MessageCode.Code, Culture)
-                            </th>
-                            <th>
-                                @Message.GetMessage(MessageCode.Description, Culture)
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody class="">
-                        <tr>
-                            <td>
-                                New
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SmNewOrder, Culture)
-                            </td>
-                        </tr>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Message.GetMessage(MessageCode.Code, Culture)
+                                    </th>
+                                    <th>
+                                        @Message.GetMessage(MessageCode.Description, Culture)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td>
+                                        New
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SmNewOrder, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                Approved
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SmApprovedOrder, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        Approved
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SmApprovedOrder, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                Shipped
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SmShipped, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        Shipped
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SmShipped, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                Rejected
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SmRejected, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        Rejected
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SmRejected, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                Delivered
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SmDelivered, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        Delivered
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SmDelivered, Culture)
+                                    </td>
+                                </tr>
 
-                        <tr>
-                            <td>
-                                Completed
-                            </td>
-                            <td>
-                                @Message.GetMessage(MessageCode.SmCompleted, Culture)
-                            </td>
-                        </tr>
+                                <tr>
+                                    <td>
+                                        Completed
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.SmCompleted, Culture)
+                                    </td>
+                                </tr>
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-            
-            
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSix">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            EpttAvm - @Message.GetMessage(MessageCode.OrderStatus, Culture)
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                    <div class="panel-body">
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Message.GetMessage(MessageCode.Code, Culture)
+                                    </th>
+                                    <th>
+                                        @Message.GetMessage(MessageCode.Description, Culture)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td>
+                                        Preparing
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttPreparing, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        kargo_yapilmasi_bekleniyor
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttWaitingCargo, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        havale_onayi_bekleniyor
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttWaitingPayment, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        gondericisine_teslim_edildi
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttReturnedToSeller, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        iade
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttCancellationRequest, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        gonderilmis
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttShipped, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        iptal
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttReturnedOrder, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        odeme_gecersiz
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttPaymentCancelled, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        odeme_gecersiz
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttWaitingConfirmation, Culture)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        tamamlandi
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.EpttCompleted, Culture)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSeven">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Akakçe - @Message.GetMessage(MessageCode.OrderStatus, Culture)
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                    <div class="panel-body">
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Message.GetMessage(MessageCode.Code, Culture)
+                                    </th>
+                                    <th>
+                                        @Message.GetMessage(MessageCode.Description, Culture)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td>
+                                        WAITING_FOR_CONFIRMATION
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.AkakceWaitingConfirmation, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        WAITING_FOR_SHIPMENT
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.AkakceWaitingShipment, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        REJECTED_BY_SELLER
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.AkakceRejectedBySeller, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        CANCELLED_BY_CUSTOMER
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.AkakceCanceledByCustomer, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        SHIPPED_WITHOUT_TRACKINGNO
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.AkakceShippedWithoutTrackNo, Culture)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        COMPLETED
+                                    </td>
+                                    <td>
+                                        @Message.GetMessage(MessageCode.AkakceCompleted, Culture)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
 
 

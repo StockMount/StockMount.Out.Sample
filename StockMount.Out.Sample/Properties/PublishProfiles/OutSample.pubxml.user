@@ -115,7 +115,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/02/2015 15:37:34</publishTime>
     </File>
     <File Include="bin/StockMount.Out.Sample.dll">
-      <publishTime>05/11/2017 17:52:36</publishTime>
+      <publishTime>08/29/2017 11:54:31</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>12/22/2015 12:41:07</publishTime>
@@ -154,7 +154,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/02/2015 15:37:30</publishTime>
     </File>
     <File Include="bin/tr/StockMount.Out.Sample.resources.dll">
-      <publishTime>05/11/2017 17:52:36</publishTime>
+      <publishTime>08/29/2017 11:54:31</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>10/02/2015 15:37:34</publishTime>
@@ -385,13 +385,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/10/2015 11:04:47</publishTime>
     </File>
     <File Include="Files/StockMount Api Services.pdf">
-      <publishTime>05/11/2017 17:44:20</publishTime>
+      <publishTime>05/17/2017 15:56:14</publishTime>
     </File>
     <File Include="Files/StockMount Api Servisi.docx">
       <publishTime>08/10/2015 17:21:32</publishTime>
     </File>
     <File Include="Files/StockMount Api Servisi.pdf">
-      <publishTime>05/11/2017 17:44:20</publishTime>
+      <publishTime>05/17/2017 15:56:14</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>10/02/2015 16:21:02</publishTime>
@@ -631,7 +631,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/17/2016 10:18:20</publishTime>
     </File>
     <File Include="Views/Home/GetSales.cshtml">
-      <publishTime>04/12/2017 14:44:53</publishTime>
+      <publishTime>08/29/2017 11:53:37</publishTime>
     </File>
     <File Include="Views/Home/GetStores.cshtml">
       <publishTime>10/06/2015 22:33:22</publishTime>
@@ -658,7 +658,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/02/2015 15:37:16</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>04/12/2017 14:44:52</publishTime>
+      <publishTime>05/31/2017 11:56:18</publishTime>
     </File>
     <File Include="Views/Shared/_LoginPartial.cshtml">
       <publishTime>10/02/2015 15:37:16</publishTime>
@@ -670,7 +670,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/02/2015 15:37:16</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/11/2017 17:52:37</publishTime>
+      <publishTime>08/29/2017 11:54:34</publishTime>
     </File>
   </ItemGroup>
 </Project>

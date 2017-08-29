@@ -88,6 +88,60 @@ namespace StockMount.Out.Sample.Utils.Language {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Canceled By Customer.
+        /// </summary>
+        internal static string AkakceCanceledByCustomer {
+            get {
+                return ResourceManager.GetString("AkakceCanceledByCustomer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed.
+        /// </summary>
+        internal static string AkakceCompleted {
+            get {
+                return ResourceManager.GetString("AkakceCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rejected By Seller.
+        /// </summary>
+        internal static string AkakceRejectedBySeller {
+            get {
+                return ResourceManager.GetString("AkakceRejectedBySeller", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipped Without Track No.
+        /// </summary>
+        internal static string AkakceShippedWithoutTrackNo {
+            get {
+                return ResourceManager.GetString("AkakceShippedWithoutTrackNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting Confirmation.
+        /// </summary>
+        internal static string AkakceWaitingConfirmation {
+            get {
+                return ResourceManager.GetString("AkakceWaitingConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting Shipment.
+        /// </summary>
+        internal static string AkakceWaitingShipment {
+            get {
+                return ResourceManager.GetString("AkakceWaitingShipment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Authentication.
         /// </summary>
         internal static string Authentication {
@@ -294,6 +348,96 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string Email {
             get {
                 return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancellation Request.
+        /// </summary>
+        internal static string EpttCancellationRequest {
+            get {
+                return ResourceManager.GetString("EpttCancellationRequest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Completed.
+        /// </summary>
+        internal static string EpttCompleted {
+            get {
+                return ResourceManager.GetString("EpttCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Cancelled.
+        /// </summary>
+        internal static string EpttPaymentCancelled {
+            get {
+                return ResourceManager.GetString("EpttPaymentCancelled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preparing.
+        /// </summary>
+        internal static string EpttPreparing {
+            get {
+                return ResourceManager.GetString("EpttPreparing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returned Order.
+        /// </summary>
+        internal static string EpttReturnedOrder {
+            get {
+                return ResourceManager.GetString("EpttReturnedOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Returned To Seller.
+        /// </summary>
+        internal static string EpttReturnedToSeller {
+            get {
+                return ResourceManager.GetString("EpttReturnedToSeller", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipped.
+        /// </summary>
+        internal static string EpttShipped {
+            get {
+                return ResourceManager.GetString("EpttShipped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting Cargo.
+        /// </summary>
+        internal static string EpttWaitingCargo {
+            get {
+                return ResourceManager.GetString("EpttWaitingCargo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting Confirmation.
+        /// </summary>
+        internal static string EpttWaitingConfirmation {
+            get {
+                return ResourceManager.GetString("EpttWaitingConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Waiting Payment.
+        /// </summary>
+        internal static string EpttWaitingPayment {
+            get {
+                return ResourceManager.GetString("EpttWaitingPayment", resourceCulture);
             }
         }
         
@@ -609,6 +753,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string GetStoresServiceDescription {
             get {
                 return ResourceManager.GetString("GetStoresServiceDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancellation Request.
+        /// </summary>
+        internal static string GgCancellationRequest {
+            get {
+                return ResourceManager.GetString("GgCancellationRequest", resourceCulture);
             }
         }
         
@@ -1560,6 +1713,15 @@ namespace StockMount.Out.Sample.Utils.Language {
         internal static string To {
             get {
                 return ResourceManager.GetString("To", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown.
+        /// </summary>
+        internal static string Unknown {
+            get {
+                return ResourceManager.GetString("Unknown", resourceCulture);
             }
         }
         

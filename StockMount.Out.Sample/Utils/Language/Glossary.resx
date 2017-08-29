@@ -669,4 +669,58 @@ Welcome to world of StockMount !..&lt;br/&gt;
   <data name="GetProductsServiceDescription" xml:space="preserve">
     <value>This function searched products of a product source upon a criteria</value>
   </data>
+  <data name="AkakceCanceledByCustomer" xml:space="preserve">
+    <value>Canceled By Customer</value>
+  </data>
+  <data name="AkakceCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="AkakceRejectedBySeller" xml:space="preserve">
+    <value>Rejected By Seller</value>
+  </data>
+  <data name="AkakceShippedWithoutTrackNo" xml:space="preserve">
+    <value>Shipped Without Track No</value>
+  </data>
+  <data name="AkakceWaitingConfirmation" xml:space="preserve">
+    <value>Waiting Confirmation</value>
+  </data>
+  <data name="AkakceWaitingShipment" xml:space="preserve">
+    <value>Waiting Shipment</value>
+  </data>
+  <data name="EpttCancellationRequest" xml:space="preserve">
+    <value>Cancellation Request</value>
+  </data>
+  <data name="EpttCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="EpttPaymentCancelled" xml:space="preserve">
+    <value>Payment Cancelled</value>
+  </data>
+  <data name="EpttPreparing" xml:space="preserve">
+    <value>Preparing</value>
+  </data>
+  <data name="EpttReturnedOrder" xml:space="preserve">
+    <value>Returned Order</value>
+  </data>
+  <data name="EpttReturnedToSeller" xml:space="preserve">
+    <value>Returned To Seller</value>
+  </data>
+  <data name="EpttShipped" xml:space="preserve">
+    <value>Shipped</value>
+  </data>
+  <data name="EpttWaitingCargo" xml:space="preserve">
+    <value>Waiting Cargo</value>
+  </data>
+  <data name="EpttWaitingConfirmation" xml:space="preserve">
+    <value>Waiting Confirmation</value>
+  </data>
+  <data name="EpttWaitingPayment" xml:space="preserve">
+    <value>Waiting Payment</value>
+  </data>
+  <data name="GgCancellationRequest" xml:space="preserve">
+    <value>Cancellation Request</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
 </root>

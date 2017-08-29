@@ -285,5 +285,26 @@ namespace StockMount.Out.Sample.Utils.Language
         public const string All = "All";
 
         public const string GetProductsService = "GetProductsService";
+
+	    public const string GgCancellationRequest = "GgCancellationRequest";
+	    public const string Unknown = "Unknown";
+
+	    public const string EpttPreparing = "EpttPreparing";
+        public const string EpttWaitingCargo = "EpttWaitingCargo";
+	    public const string EpttWaitingPayment = "EpttWaitingPayment";
+        public const string EpttReturnedToSeller = "EpttReturnedToSeller";
+	    public const string EpttCancellationRequest = "EpttCancellationRequest";
+	    public const string EpttShipped = "EpttShipped";
+	    public const string EpttReturnedOrder = "EpttReturnedOrder";
+	    public const string EpttPaymentCancelled = "EpttPaymentCancelled";
+	    public const string EpttWaitingConfirmation = "EpttWaitingConfirmation";
+	    public const string EpttCompleted = "EpttCompleted";
+
+	    public const string AkakceWaitingConfirmation = "AkakceWaitingConfirmation";
+	    public const string AkakceWaitingShipment = "AkakceWaitingShipment";
+	    public const string AkakceRejectedBySeller = "AkakceRejectedBySeller";
+	    public const string AkakceCanceledByCustomer = "AkakceCanceledByCustomer";
+	    public const string AkakceShippedWithoutTrackNo = "AkakceShippedWithoutTrackNo";
+	    public const string AkakceCompleted = "AkakceCompleted";
     }
 }
